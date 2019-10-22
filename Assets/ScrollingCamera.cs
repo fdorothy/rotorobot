@@ -1,15 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using DG.Tweening;
 
 public class ScrollingCamera : MonoBehaviour
 {
 
-    public float maxDistance = 1.5f;
+    public float maxDistanceX = 1.5f;
+    public float maxDistanceY = 1.5f;
     public Transform player;
     public Vector3 target;
     public bool locked = false;
+    public float speed = 1.0f;
+    public float dx = 0.0f;
 
     // Use this for initialization
     void Start()
@@ -24,20 +26,23 @@ public class ScrollingCamera : MonoBehaviour
     {
         if (locked)
             return;
-        float dx = player.transform.position.x - transform.position.x;
-        float dy = 0.0f;
-        if (dx * dx + dy * dy > maxDistance * maxDistance)
-        {
-            reorient();
-        }
+        dx = player.transform.position.x - transform.position.x;
+        float dy = player.transform.position.y - transform.position.y;
+        dx = deltaWindow(dx, maxDistanceX);
+        dy = deltaWindow(dy, maxDistanceY);
+        Vector3 dv = new Vector3(dx, dy, 0.0f);
+        transform.position += dv;
+    }
 
-        dx = target.x - transform.position.x;
-        dy = 0.0f;
-        float d = dx * dx + dy * dy;
-        if (d > 0.5f)
-        {
-            transform.position += (new Vector3(dx, dy, 0.0f)) * Time.deltaTime;
+    float deltaWindow(float t, float max) {
+        if (Mathf.Abs(t) > max) {
+            if (t > 0.0f) {
+                return t - max;
+            } else {
+                return t + max; 
+            }
         }
+        return 0.0f;
     }
 
     void reorient()
