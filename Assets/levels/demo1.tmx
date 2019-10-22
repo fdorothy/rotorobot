@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="50" height="15" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="1">
+ <tileset firstgid="1" source="../graphics/grotto_escape.tsx"/>
+ <layer id="4" name="background" width="50" height="15">
+  <data encoding="base64" compression="zlib">
+   eJyFlkuOxCAMBdli2EyT+591uqUg1VQePQsEMfj/bGe01uq95nuNe5/4HjoXdtLXTVs4827hPKWPekpvtx7Kt33jIJ96SzaVdJHHdiQdtG1C3mxPn2fLceU9+as9bU82WV9B3mp/fWYch94xFyX9K9CdK8f+ZFuKxzcsMUbVnjZQFt+TRh+5W6dzkGJCvBqLXoyffTnFxfmjP96NCfMmXBMTqb5L7/ltnSl3JT7zO0/mZ9yNP/pEuztkdNxtW3rwpcI980Ea5boXpVixxxjLxFOXbGO6dDYOO86MqbFtu/z21L9SLxlaFZZ1uW5We+bY9XDS2SUr9dwKe9LnGjUGU62kHkUsuR5PM9F92Xhxr0/z0j5THvH82X+wPMde8NfyUh+zruuWccn+TXMsku3G0pa5ba77m7m7QCfmNo/j4jlW4N/vGT/G5RsO0nxPM9L1y7NrN/VQ8lxBv2ex9aWc1+07z7TpBf2eQenf4OSP+yKxxRow7tw3zUOfPYvdU20j7xgbz2T7M/7R6/mS/kNsu+vWePNM+9B/ATcLJfk=
+  </data>
+ </layer>
+ <layer id="6" name="lava" width="50" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMApGwSgYBaOAuoAVitmQMCsSjSyHDSCrw2YWOkZXQ8h8YgEvCZhS/YQwACW3Ai8=
+  </data>
+ </layer>
+ <layer id="5" name="ground" width="50" height="15">
+  <data encoding="base64" compression="zlib">
+   eJztVsEOgyAMrdPzblsy9aCwg///hYOEZm9vBZ3Tg4lNGkotpU9eKF5EXNBnGn1S9aGMFONTzAj2I2gXtKWRtZdtBevx8l0j41CMORxWjCef9Y/2wOGkjKN0HlXQC2hNo9rNjjiW8MrCOkJ85FUvn/xqDXtrXmE9FmdyOEq8yvFrT14hjrmzr5K/hthG3lxSu6FYzInrtpS1ebnOufXIvSMLntkppxxZ9O7nOz76W8P/a24rxz3obUW+uO4q330qjtgPOvjG/iV4tG5VzPHvP0Hhd5CjvVzGz31yyNjcO/H+te7hoZCLbZxzr9W9rB7P+LCGKWPzGxlxWG+GqZCLbZy/AKajH0A=
+  </data>
+ </layer>
+</map>
