@@ -5,6 +5,7 @@ using DG.Tweening;
 
 public class Slime : MonoBehaviour
 {
+    protected Monster monster;
     Rigidbody2D rb;
     Animator anim;
     public float facing = 1.0f;
@@ -23,12 +24,17 @@ public class Slime : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        monster = GetComponent<Monster>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         StartCoroutine(WalkRoutine());
     }
 
     public void FixedUpdate() {
+        if (monster.IsDead()) {
+            rb.velocity = Vector2.zero;
+            return;
+        }
         if (!floorCheck()) {
             rb.velocity = new Vector2(0.0f, rb.velocity.y);
         }

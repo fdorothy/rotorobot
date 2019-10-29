@@ -85,6 +85,9 @@ MonoBehaviour:
   blastSystem: {fileID: 2947711075854147584}
   chargingSystem: {fileID: 7177705432200704529}
   sprite: {fileID: 5845801549948789846}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 768
   charge: 0
   beamStages:
   - {fileID: 980155311395259703, guid: 30d40b93414092c45ae8363a6250725b, type: 3}

@@ -17,7 +17,7 @@ public class Beam : MonoBehaviour
 
     protected bool blownUp = false;
 
-    protected LayerMask layerMask;
+    [SerializeField] public LayerMask layerMask;
     protected bool shooting = false;
     public float charge = 0.0f;
 
@@ -27,7 +27,6 @@ public class Beam : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        layerMask = 1 << LayerMask.NameToLayer("ground");
         shake();
     }
 
@@ -88,6 +87,13 @@ public class Beam : MonoBehaviour
         if (hit.collider != null)
         {
             BlowUp(hit.point);
+
+            // did we hit an enemy?
+            Monster m = hit.transform.GetComponent<Monster>();
+            if (m)
+            {
+                m.Hit(1);
+            }
         }
         else
         {
