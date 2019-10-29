@@ -13,6 +13,17 @@ public class Player : MonoBehaviour
     protected Animator m_Animator;
     private bool m_Jump = false;
 
+    public Beam beamPrefab;
+    public Beam beamObject;
+    public Transform pistolMount;
+
+    protected bool shooting = false;
+
+    protected bool charging = false;
+
+    protected bool inChargeZone = false;
+    public float weaponCharge = 0.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,5 +62,78 @@ public class Player : MonoBehaviour
         m_Character.Move(h, false, m_Jump);
         m_Jump = false;
 
+        if (CrossPlatformInputManager.GetButtonDown("Fire1"))
+        {
+            if (!charging && !shooting)
+            {
+                Debug.Log("fire1");
+                beamObject = Instantiate(beamPrefab);
+                beamObject.SetDir(new Vector2(m_Character.m_FacingRight ? 1.0f : -1.0f, 0.0f), inChargeZone);
+                beamObject.transform.position = this.pistolMount.transform.position;
+                beamObject.transform.parent = this.pistolMount;
+                if (inChargeZone)
+                {
+                    charging = true;
+                    weaponCharge = 0.0f;
+                }
+                else
+                {
+                    charging = false;
+                    Fire();
+                    weaponCharge = 0.0f;
+                }
+            }
+        }
+        if (charging && beamObject)
+        {
+            m_Animator.SetBool("Shooting", true);
+            weaponCharge += Time.deltaTime;
+            const float maxCharge = 1.5f;
+            if (weaponCharge > maxCharge)
+            {
+                weaponCharge = maxCharge;
+            }
+            beamObject.SetCharge(weaponCharge / maxCharge);
+            if (CrossPlatformInputManager.GetButtonUp("Fire1"))
+            {
+                Debug.Log("let go");
+                charging = false;
+                Fire();
+                weaponCharge = 0.0f;
+            }
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.tag == "Charger")
+        {
+            inChargeZone = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D collider)
+    {
+        if (collider.gameObject.tag == "Charger")
+        {
+            inChargeZone = false;
+        }
+    }
+
+    void Fire()
+    {
+        if (shooting)
+            return;
+        shooting = true;
+        m_Animator.SetBool("Shooting", true);
+        beamObject.Shoot(new Vector2(m_Character.m_FacingRight ? 1.0f : -1.0f, 0.0f));
+        beamObject = null;
+        Invoke("ResetGun", 0.25f);
+    }
+
+    void ResetGun()
+    {
+        shooting = false;
+        m_Animator.SetBool("Shooting", false);
     }
 }
