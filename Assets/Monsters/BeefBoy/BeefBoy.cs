@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-public class Slime : MonoBehaviour
+public class BeefBoy : MonoBehaviour
 {
-    protected Monster monster;
+    Monster monster;
     Rigidbody2D rb;
     Animator anim;
     public float facing = 1.0f;
@@ -24,38 +24,50 @@ public class Slime : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        monster = GetComponent<Monster>();
+        monster = GetComponentInChildren<Monster>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         StartCoroutine(WalkRoutine());
     }
 
-    public void FixedUpdate() {
-        if (monster.IsDead()) {
+    public void FixedUpdate()
+    {
+        if (monster.IsDead())
+        {
             rb.velocity = Vector2.zero;
-            return;
         }
-        if (!floorCheck()) {
-            rb.velocity = new Vector2(0.0f, rb.velocity.y);
-        }
-    }
-
-    public IEnumerator WalkRoutine() {
-        while (true) {
-        if (safeToSlide()) {
-            anim.SetTrigger("Slide");
-            rb.velocity = new Vector2(slideForce * facing, 0.0f);
-            yield return new WaitForSeconds(slideTime);
-            rb.velocity = new Vector2(0.0f, 0.0f);
-            yield return new WaitForSeconds(waitTime);
-        } else {
-            turnAround();
-            yield return new WaitForSeconds(turnTime);
-        }
+        else
+        {
+            if (!floorCheck())
+            {
+                rb.velocity = new Vector2(0.0f, rb.velocity.y);
+            }
         }
     }
 
-    public void turnAround() {
+    public IEnumerator WalkRoutine()
+    {
+        while (true)
+        {
+            if (safeToSlide())
+            {
+                anim.SetTrigger("Hop");
+                yield return new WaitForSeconds(.1f);
+                rb.velocity = new Vector2(slideForce * facing, 0.0f);
+                yield return new WaitForSeconds(slideTime);
+                rb.velocity = new Vector2(0.0f, 0.0f);
+                yield return new WaitForSeconds(waitTime);
+            }
+            else
+            {
+                turnAround();
+                yield return new WaitForSeconds(turnTime);
+            }
+        }
+    }
+
+    public void turnAround()
+    {
         facing *= -1.0f;
 
         // Multiply the player's x local scale by -1.
@@ -64,7 +76,8 @@ public class Slime : MonoBehaviour
         transform.localScale = theScale;
     }
 
-    public bool safeToSlide() {
+    public bool safeToSlide()
+    {
         bool ground = Physics2D.OverlapCircle(groundCheck.position, .1f, whatIsGround);
         Vector2 v = new Vector3(facing, 0.0f, 0.0f);
         RaycastHit2D hit = Physics2D.Raycast(wallCheck.position, v, 0.5f, whatIsGround);
@@ -75,7 +88,8 @@ public class Slime : MonoBehaviour
         return (!wall && floor);
     }
 
-    public bool floorCheck() {
+    public bool floorCheck()
+    {
         Vector3 v = new Vector3(0.0f, -1.0f, 0.0f);
         RaycastHit2D hit = Physics2D.Raycast(wallCheck.position, v, 0.5f, whatIsGround);
         bool floor = (hit.collider != null);

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="50" height="15" tilewidth="16" tileheight="16" infinite="0" nextlayerid="8" nextobjectid="11">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="50" height="15" tilewidth="16" tileheight="16" infinite="0" nextlayerid="8" nextobjectid="12">
  <tileset firstgid="1" source="../graphics/grotto_escape.tsx"/>
  <tileset firstgid="41" source="monsters.tsx"/>
  <layer id="4" name="background" width="50" height="15">
@@ -11,6 +11,7 @@
   <object id="8" name="system" type="Charger" x="224" y="128" width="32" height="64"/>
   <object id="9" name="slimer" type="slime" x="96" y="160" width="16" height="16"/>
   <object id="10" name="slimer" type="slime" x="192" y="160" width="16" height="16"/>
+  <object id="11" name="beefboy" type="beefboy" x="416" y="176" width="16" height="16"/>
  </objectgroup>
  <layer id="6" name="lava" width="50" height="15">
   <data encoding="base64" compression="zlib">

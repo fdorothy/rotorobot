@@ -22,6 +22,8 @@ public class Player : MonoBehaviour
     protected bool charging = false;
 
     protected bool inChargeZone = false;
+
+    protected bool requestShot = false;
     public float weaponCharge = 0.0f;
 
     // Start is called before the first frame update
@@ -62,11 +64,11 @@ public class Player : MonoBehaviour
         m_Character.Move(h, false, m_Jump);
         m_Jump = false;
 
-        if (CrossPlatformInputManager.GetButtonDown("Fire1"))
+        bool fire1 = CrossPlatformInputManager.GetButtonDown("Fire1");
+        if (fire1 || (requestShot && !shooting))
         {
             if (!charging && !shooting)
             {
-                Debug.Log("fire1");
                 beamObject = Instantiate(beamPrefab);
                 beamObject.SetDir(new Vector2(m_Character.m_FacingRight ? 1.0f : -1.0f, 0.0f), inChargeZone);
                 beamObject.transform.position = this.pistolMount.transform.position;
@@ -81,6 +83,15 @@ public class Player : MonoBehaviour
                     charging = false;
                     Fire();
                     weaponCharge = 0.0f;
+                }
+                requestShot = false;
+            }
+            else
+            {
+                if (fire1)
+                {
+                    Debug.Log("requesting extra shot...");
+                    requestShot = true;
                 }
             }
         }
