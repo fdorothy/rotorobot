@@ -186,7 +186,7 @@ MonoBehaviour:
   flapTime: 0.1
   waitTime: 0.5
   turnTime: 0
-  flapForce: {x: 0, y: 40, z: 0}
+  flapForce: {x: 0, y: 60, z: 0}
   maxSpeed: 2
   whatIsGround:
     serializedVersion: 2
