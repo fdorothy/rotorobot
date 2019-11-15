@@ -20,12 +20,12 @@
  </objectgroup>
  <layer id="24" name="lava" width="200" height="16">
   <data encoding="base64" compression="zlib">
-   eJzt1kEKgCAQBdA2tev+161NIMOIhWUL34MhiBIxPr9lAQAAAAAAAABGWs/ZiuuW3INZ7TcGZtWTj6tjsu75s4fWMNleyonP6kwuPfm4825tnS876+m+dCY18iEfLbFbYx+3ejd2dNbhWZ9n/ySjyYd8tPSe2xvfo1z/AAtZCu0=
+   eJzt1ksKgDAMBUA3uvP+19VNIYSIhWpdOANB8FP8JDyXBQAAAAAAAACYaT1rC9ut2Ad/tXcU/NXIfLSMqbLnyxxaU1X3EiufKzNpRuaj59qrdWK/tuOxR99+JplJj6/m483+NB/Pytma8/gud3NGVxle5Xn1TzKb+TAfd0bf2xPfI65/AIdzCr8=
   </data>
  </layer>
  <layer id="25" name="ground" width="200" height="16">
   <data encoding="base64" compression="zlib">
-   eJztmktvwjAQhE3JubdWauDQ2Bz6/39hYylWh9WuiV+F0vmklS0/lgTNkFVMcDaBwRgQyL2vpfR65bUTUkrUjV/jsrVBjCGLWBO2NQv0P9Y4rTGLVsZ5wH3QH6Q3qHP5W6z5I3nH8oe2JogxzXu97iM3T0gpmj+8y/sj9/w4rPECcRRt6k+D7iM3T0gpqPM99ZXmoQXWx/rq7K7rrFnp/3Z9RUgNqHOtdkL2PD8WZ9dZ96yvCKkB/XGrBjps40dYO7mfmir1J7EWc+K+ntAfZAS1epX6v7Ufa7AR0B/kL4PPmBE8sz/2nO8QkmOUfkrPIXvttfIQUgP9QYhNi35yGn5kf+TGaqIHLZ//iKGRzi7kGUUcn5XxEqwc72u8VeSL+15dH+311tJ/9Yd31+/y8TO8iGCs1ea0/p68Wk5rncwtz+9ii+cZJ5iT43t8kvyQAnO0eg2p0YD2HdIfbeR0qOnvlq5zuayclr9y16TtteZQw94YT23i0+jLM0V8z9vzfW+LLuiPvv54xkCfSB94ZVxq+8voy//8oj+kx1qIub4B8eR1Zw==
+   eJztWstuwyAQJE3OvbVS3BwaJ4f+/xfWSEHdTmd42aRquiOtQvACC96BBXwNGrtFnhbZ336f4D/mK0H9PTwr1V/6rWmvph32jOmyumrqxbJYJ9PL9b3FfmaHskvZkOtrbswwbcFsYraU8lUdOftLfjUvcg0a50UuFXoOh0Xym+gz8y2t/OgMOqmcreO4yNsiE/yinAb0w/nh2BrJ56PPXMJP30fd5GOKH0znAnkjfLSWH6xfDoeC9W30Y8WP3PqR4vxc/BrThwH9yPn9ztiwdduOx0VrfMU4ZNegGF+dwvc4ayLpe8dXDkcPML7C2Al1S+vHOeg46zfjK4ejB5YfpRgoxSj2nOkQvmKqlD6ALjv3und85XD0wPp2a7kWf7c8HAHnh+Mvo5eHtXhkfqS93NZ7Nsf/wSh+4H1Oi58eodzUUNbC7u8cjh6M4geeM7TEiOo8o9cG54ejF2v4gWfRdo5P+6YkLX6q7lNbofZu6Swd8+w5uhX8pmHEebttH9tBu1CH6bIy2CdWh+p3Th+fqzFR8W7q+5qxVHW8LvLSUV8s9xz6+RHtYff9aZzmUL4XUsD7ot7zCcUP1mfLSeQ19mXtusaA7bDxY3axZ0zwrgDrLT1josrGNOOTXc8tBzG/hic4n9g61nLNIvmKmn9YW9E29f62+DYGfXXr+Erxo9b3ejhfgmqT8aPEiZLd7P3U+Lzip9LFetmdOubj+3oXaYzB7Vy45XtJvpIbUzsfTEGPqfKv1rl29P6jxA/23pW/jlg/SnO6squljFoTaqTEW9UW8mAm+TimHyKN3/ziff2W/PgE5bFacw==
   </data>
  </layer>
 </map>
