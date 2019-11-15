@@ -26,26 +26,74 @@ public class Player : MonoBehaviour
     protected bool requestShot = false;
     public float weaponCharge = 0.0f;
 
+    protected bool canLaunch;
+    protected bool launching;
+    protected Vector2 launchDir;
+
+    public ParticleSystem jetParticles;
+
     // Start is called before the first frame update
     void Start()
     {
         m_Character = GetComponent<PlatformerCharacter2D>();
         m_RigidBody = GetComponent<Rigidbody2D>();
         m_Animator = GetComponent<Animator>();
+        canLaunch = false;
+        launching = false;
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!m_Jump)
+        float h = CrossPlatformInputManager.GetAxis("Horizontal");
+        float v = CrossPlatformInputManager.GetAxis("Vertical");
+        bool jump = CrossPlatformInputManager.GetButtonDown("Jump");
+        if (jump)
         {
-            m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
+            if (m_Character.isGrounded())
+            {
+                m_Jump = true;
+                canLaunch = true;
+            }
+            else if (canLaunch)
+            {
+                launchDir = new Vector2(h, v);
+                if (launchDir.magnitude < 0.1f) {
+                    // launch up by default
+                    launchDir = Vector2.up;
+                }
+                if (launchDir.magnitude > 0.1f)
+                {
+                    launching = true;
+                    canLaunch = false;
+                    StartCoroutine(DoLaunch());
+                }
+            }
         }
+    }
+
+    IEnumerator DoLaunch()
+    {
+        jetParticles.Play();
+        m_Animator.SetBool("Launching", true);
+        float gravity = m_RigidBody.gravityScale;
+        m_RigidBody.gravityScale = 0.0f;
+        yield return new WaitForSeconds(0.1f);
+        m_RigidBody.velocity = launchDir.normalized * 20.0f;
+        yield return new WaitForSeconds(0.5f);
+        m_RigidBody.velocity = Vector2.zero;
+        m_RigidBody.gravityScale = gravity;
+        launching = false;
+        canLaunch = false;
+        m_Animator.SetBool("Launching", false);
+        jetParticles.Stop();
     }
 
     void FixedUpdate()
     {
+        if (launching) return;
+
         // Read the inputs.
         float h = CrossPlatformInputManager.GetAxis("Horizontal");
 

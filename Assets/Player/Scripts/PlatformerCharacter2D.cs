@@ -21,6 +21,10 @@ public class PlatformerCharacter2D : MonoBehaviour
     private bool m_Paused;
     public float speedFactor = 1.0f;
 
+    public bool isGrounded() {
+        return m_Grounded;
+    }
+
     /**
      * Sets whether or not the character is paused. This will pause all movement
      * and sort of freeze the character in position.
