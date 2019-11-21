@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="200" height="16" tilewidth="16" tileheight="16" infinite="0" nextlayerid="26" nextobjectid="18">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="200" height="16" tilewidth="16" tileheight="16" infinite="0" nextlayerid="26" nextobjectid="19">
  <tileset firstgid="1" source="../graphics/grotto_escape.tsx"/>
  <tileset firstgid="41" source="monsters.tsx"/>
  <layer id="23" name="background" width="200" height="16">
@@ -17,6 +17,11 @@
   <object id="15" name="lavablock" type="lavablock" x="736" y="16" width="32" height="32"/>
   <object id="16" name="lavablock" type="lavablock" x="1408" y="16" width="32" height="32"/>
   <object id="17" name="lavablock" type="lavablock" x="3024" y="16" width="32" height="32"/>
+  <object id="18" name="text_trigger" type="TextTrigger" x="65" y="130" width="14" height="14.5">
+   <properties>
+    <property name="text" value="Hello, world"/>
+   </properties>
+  </object>
  </objectgroup>
  <layer id="24" name="lava" width="200" height="16">
   <data encoding="base64" compression="zlib">
