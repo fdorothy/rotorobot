@@ -13,8 +13,8 @@ public class Player : MonoBehaviour
     protected Animator m_Animator;
     private bool m_Jump = false;
 
-    public Beam beamPrefab;
-    public Beam beamObject;
+    public Bullet beamPrefab;
+    public Bullet beamObject;
     public Transform pistolMount;
 
     protected bool shooting = false;

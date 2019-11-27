@@ -5,7 +5,7 @@ using DG.Tweening;
 
 public class BeefBoy : MonoBehaviour
 {
-    Monster monster;
+    Creature monster;
     Rigidbody2D rb;
     Animator anim;
     public float facing = 1.0f;
@@ -24,7 +24,7 @@ public class BeefBoy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        monster = GetComponentInChildren<Monster>();
+        monster = GetComponentInChildren<Creature>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         StartCoroutine(WalkRoutine());

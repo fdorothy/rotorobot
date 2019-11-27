@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-public class Beam : MonoBehaviour
+public class Bullet : MonoBehaviour
 {
     public Sprite explosionSprite;
     public Sprite shootingSprite;
@@ -89,7 +89,7 @@ public class Beam : MonoBehaviour
             BlowUp(hit.point);
 
             // did we hit an enemy?
-            Monster m = hit.transform.GetComponent<Monster>();
+            Creature m = hit.transform.GetComponent<Creature>();
             if (m)
             {
                 m.Hit(1);

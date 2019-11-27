@@ -1,9 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using DG.Tweening;
 
-public class Monster : MonoBehaviour
+public class Creature : MonoBehaviour
 {
     public int hitpoints = 1;
     public SpriteRenderer spriteRenderer;
@@ -11,9 +12,16 @@ public class Monster : MonoBehaviour
 
     protected Material material;
 
+    public UnityEvent OnHit;
+    public UnityEvent OnDying;
+    public UnityEvent OnDead;
+
     // Start is called before the first frame update
     void Start()
     {
+        OnHit = new UnityEvent();
+        OnDying = new UnityEvent();
+        OnDead = new UnityEvent();
         spriteRenderer = this.transform.GetComponentInChildren<SpriteRenderer>();
         material = spriteRenderer.material;
     }
@@ -25,8 +33,10 @@ public class Monster : MonoBehaviour
             return;
         }
         hitpoints -= damage;
+        OnHit.Invoke();
         if (hitpoints <= 0)
         {
+            OnDying.Invoke();
             dead = true;
             StartCoroutine(FlashingDeath());
         }
@@ -61,6 +71,7 @@ public class Monster : MonoBehaviour
             material.SetFloat("SolidColor", 0.0f);
             yield return new WaitForSeconds(0.1f);
         }
+        OnDead.Invoke();
         Destroy(this.gameObject);
 
     }

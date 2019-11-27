@@ -5,7 +5,7 @@ using DG.Tweening;
 
 public class Slime : MonoBehaviour
 {
-    protected Monster monster;
+    protected Creature monster;
     Rigidbody2D rb;
     Animator anim;
     public float facing = 1.0f;
@@ -18,13 +18,15 @@ public class Slime : MonoBehaviour
     public float slideTime;
     public float waitTime;
     public float turnTime;
+    public Transform shootPoint;
+    public Transform bulletPrefab;
 
     [SerializeField] public LayerMask whatIsGround;
 
     // Start is called before the first frame update
     void Start()
     {
-        monster = GetComponent<Monster>();
+        monster = GetComponent<Creature>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         StartCoroutine(WalkRoutine());
@@ -62,6 +64,10 @@ public class Slime : MonoBehaviour
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
+    }
+
+    public void shoot() {
+        Transform bullet = Instantiate(bulletPrefab);
     }
 
     public bool safeToSlide() {

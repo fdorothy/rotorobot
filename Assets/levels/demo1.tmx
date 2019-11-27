@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="200" height="16" tilewidth="16" tileheight="16" infinite="0" nextlayerid="26" nextobjectid="19">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="200" height="16" tilewidth="16" tileheight="16" infinite="0" nextlayerid="26" nextobjectid="71">
  <tileset firstgid="1" source="../graphics/grotto_escape.tsx"/>
  <tileset firstgid="41" source="monsters.tsx"/>
  <layer id="23" name="background" width="200" height="16">
   <data encoding="base64" compression="zlib">
-   eJztmstugzAURL3FZNPC/39rgxKrJ4dLVnHVxYxkQYwfEZrxfdFaEARB8FdY763f2+15f0Nb0bdirOccbXv2bbjnsw33N+3HfbrGjn24vv/f+vG3EgQPVLwln3t75fr4PZ5zjvlNfVAnHfN6e9XaVqxtPfD5mB8EM0BOUxMV183joRue77YvnE8dmd8bmvttW6zp2I9gFirOV+f3O5+KZ3pvZ25zLY5nH7XDq/e0zYk+gpkg3xgP2Nd343lvjVzpzfaGOvHVNsxzreEgmAFyvDqraTd8pvv878Ucas3jvIbtkHMGjE+op+3jbyUIHmAcffBtab/cXPBscHxp1zE2n9N+sI/rOjdVaZC5Aft09LeCYAYOrpKzjhm67u2PLbinDXDsYL577FU+q8oBrGrRRzALXc0cdlyytbOv43jjisuL1qpyu724Vvs5BgqCGbCPX8UiVc6KPpXj6KtaofO/9pucU67qiNbSWCcIZsD16uP6heb63nc755+oJ+e1rIn9ucbeXnUx+qyxShPOI+8ffytB8MDBy6GF/vxNH2ZHP32vMcfnuOt7HfPHeMb71Ns7u1XV02lngmAG7CNVvpBj7ipXyzl7O/PatW/vR3sUBP8Frs1V33hc6cT5V/pYjDHsfzk/6znUkmuUzrGN8UEwAz6/fZa7Bm6d0Feq+Oz6SPU9iTWxak/7Xa7JDP/qBwD0JVE=
+   eJztmkuOwjAUBL2Nw2Ymuf9ZhwgsiuKFFR6x6JasBMcfFHX7/dJaEARB8F9Yr61f2+V+f0Fb0bdirOccbbv3bbjnsw33F+3HfbrGjn24vv/f+vG3EgQ3VLwln3t75vr4PZ5zjvlNfVAnHfN6e9baVqxtPfD5mB8EM0BOUxMV183joRue77YvnE8dmd8bmvttW6zp2I9gFirOV+f3O5+KZ3pvr9zmWhzPPmqHV+9pmxN9BDNBvjEesK/vxvPeGjnTm+0NdeKrbZjnWsNBMAPkeHVW0274TPf534s51JrHeQ3bIecMGJ9QT9vH30oQ3MA4+uDb0h7cXPBscHxp5zE2n9N+sI/rOjdVaZC5Aft09LeCYAYOrpKzjhm67u2PLbinDXDsYL577Fk+q8oBrGrRRzALXc0cdlyytVdfx/HGGZcXrdU13jmzqk7ivcYeQTAD9vGrWKTKWdGnchx9Vit0/pfa+b22vVij0oTzZPvH30oQ3OB69XH9QXN97+Cx80+2A475yem9PbRAexQE34iDq0ML/f6b8cCOfvpeY479HNf3OuaP8Yz3qbd3dquqp9MPC4IZsI9U+UKOuatcLefs7ZXXrn17P9qjIPgWuDZXfeNxphPnX+ljMcaw/+X8rOdQS65ROsc2xgfBDPj89lnuGrh1Ql+p4rPrI9X3JNbEqj2r2qVr/Af+AHDZJGE=
   </data>
  </layer>
  <objectgroup id="7" name="objects">
@@ -14,14 +14,66 @@
   <object id="11" name="beefboy" type="beefboy" x="2800" y="192" width="16" height="16"/>
   <object id="12" name="lavablock" type="lavablock" x="496" y="16" width="32" height="32"/>
   <object id="14" name="player" type="player" x="64" y="80" width="16" height="16"/>
-  <object id="15" name="lavablock" type="lavablock" x="736" y="16" width="32" height="32"/>
-  <object id="16" name="lavablock" type="lavablock" x="1408" y="16" width="32" height="32"/>
+  <object id="15" name="lavablock" type="lavablock" x="758" y="16.6667" width="32" height="32"/>
+  <object id="16" name="lavablock" type="lavablock" x="1432.67" y="17.3333" width="32" height="32"/>
   <object id="17" name="lavablock" type="lavablock" x="3024" y="16" width="32" height="32"/>
   <object id="18" name="text_trigger" type="TextTrigger" x="65" y="130" width="14" height="14.5">
    <properties>
     <property name="text" value="Hello, world"/>
    </properties>
   </object>
+  <object id="19" name="slimer" type="slime" x="2416" y="191" width="16" height="16"/>
+  <object id="20" name="slimer" type="slime" x="2320" y="173" width="16" height="16"/>
+  <object id="21" name="slimer" type="slime" x="2128" y="174.5" width="16" height="16"/>
+  <object id="22" name="slimer" type="slime" x="2208.5" y="46.5" width="16" height="16"/>
+  <object id="23" name="slimer" type="slime" x="2016" y="94.5" width="16" height="16"/>
+  <object id="24" name="slimer" type="slime" x="1855.5" y="46.5" width="16" height="16"/>
+  <object id="25" name="slimer" type="slime" x="1841" y="126" width="16" height="16"/>
+  <object id="26" name="slimer" type="slime" x="1648.5" y="126" width="16" height="16"/>
+  <object id="27" name="slimer" type="slime" x="1632" y="46.5" width="16" height="16"/>
+  <object id="28" name="slimer" type="slime" x="1344" y="46.5" width="16" height="16"/>
+  <object id="29" name="slimer" type="slime" x="1263" y="46" width="16" height="16"/>
+  <object id="30" name="slimer" type="slime" x="1181" y="78.5" width="16" height="16"/>
+  <object id="31" name="slimer" type="slime" x="1167" y="174.5" width="16" height="16"/>
+  <object id="32" name="slimer" type="slime" x="1214.5" y="174" width="16" height="16"/>
+  <object id="33" name="slimer" type="slime" x="1087.5" y="174" width="16" height="16"/>
+  <object id="34" name="slimer" type="slime" x="880" y="126.5" width="16" height="16"/>
+  <object id="35" name="slimer" type="slime" x="623.5" y="142.5" width="16" height="16"/>
+  <object id="36" name="slimer" type="slime" x="655" y="46.5" width="16" height="16"/>
+  <object id="37" name="slimer" type="slime" x="591.5" y="47" width="16" height="16"/>
+  <object id="38" name="slimer" type="slime" x="384" y="142" width="16" height="16"/>
+  <object id="39" name="slimer" type="slime" x="254.5" y="174" width="16" height="16"/>
+  <object id="40" name="slimer" type="slime" x="160" y="221" width="16" height="16"/>
+  <object id="41" name="bat" type="bat" x="688" y="96.3333" width="16" height="16"/>
+  <object id="42" name="bat" type="bat" x="576" y="97" width="16" height="16"/>
+  <object id="43" name="bat" type="bat" x="623.667" y="16.6667" width="16" height="16"/>
+  <object id="44" name="bat" type="bat" x="880" y="17" width="16" height="16"/>
+  <object id="45" name="bat" type="bat" x="1343.5" y="17.5" width="16" height="16"/>
+  <object id="46" name="bat" type="bat" x="1264" y="17" width="16" height="16"/>
+  <object id="47" name="bat" type="bat" x="1167" y="17" width="16" height="16"/>
+  <object id="48" name="bat" type="bat" x="1248.5" y="129" width="16" height="16"/>
+  <object id="49" name="bat" type="bat" x="1184.5" y="128.5" width="16" height="16"/>
+  <object id="50" name="bat" type="bat" x="1360" y="97.5" width="16" height="16"/>
+  <object id="51" name="bat" type="bat" x="1583.5" y="97.5" width="16" height="16"/>
+  <object id="52" name="bat" type="bat" x="1680.5" y="97" width="16" height="16"/>
+  <object id="53" name="bat" type="bat" x="1808.5" y="97" width="16" height="16"/>
+  <object id="54" name="bat" type="bat" x="1904.5" y="96.5" width="16" height="16"/>
+  <object id="55" name="bat" type="bat" x="1903.5" y="17.5" width="16" height="16"/>
+  <object id="56" name="bat" type="bat" x="1679.5" y="17" width="16" height="16"/>
+  <object id="57" name="bat" type="bat" x="1600" y="17" width="16" height="16"/>
+  <object id="58" name="bat" type="bat" x="1808" y="17.5" width="16" height="16"/>
+  <object id="59" name="bat" type="bat" x="2159" y="17" width="16" height="16"/>
+  <object id="60" name="bat" type="bat" x="2270.5" y="17" width="16" height="16"/>
+  <object id="61" name="bat" type="bat" x="2255" y="97.5" width="16" height="16"/>
+  <object id="62" name="bat" type="bat" x="2160.5" y="97.5" width="16" height="16"/>
+  <object id="63" name="beefboy" type="beefboy" x="2240" y="174" width="16" height="16"/>
+  <object id="64" name="beefboy" type="beefboy" x="2395.5" y="191" width="16" height="16"/>
+  <object id="65" name="beefboy" type="beefboy" x="2239.5" y="46.5" width="16" height="16"/>
+  <object id="66" name="beefboy" type="beefboy" x="1889" y="46.5" width="16" height="16"/>
+  <object id="67" name="beefboy" type="beefboy" x="1668" y="46.5" width="16" height="16"/>
+  <object id="68" name="beefboy" type="beefboy" x="1744" y="174" width="16" height="16"/>
+  <object id="69" name="beefboy" type="beefboy" x="1927.5" y="174.5" width="16" height="16"/>
+  <object id="70" name="bat" type="bat" x="383.333" y="18" width="16" height="16"/>
  </objectgroup>
  <layer id="24" name="lava" width="200" height="16">
   <data encoding="base64" compression="zlib">
@@ -30,7 +82,7 @@
  </layer>
  <layer id="25" name="ground" width="200" height="16">
   <data encoding="base64" compression="zlib">
-   eJztWstuwyAQJE3OvbVS3BwaJ4f+/xfWSEHdTmd42aRquiOtQvACC96BBXwNGrtFnhbZ336f4D/mK0H9PTwr1V/6rWmvph32jOmyumrqxbJYJ9PL9b3FfmaHskvZkOtrbswwbcFsYraU8lUdOftLfjUvcg0a50UuFXoOh0Xym+gz8y2t/OgMOqmcreO4yNsiE/yinAb0w/nh2BrJ56PPXMJP30fd5GOKH0znAnkjfLSWH6xfDoeC9W30Y8WP3PqR4vxc/BrThwH9yPn9ztiwdduOx0VrfMU4ZNegGF+dwvc4ayLpe8dXDkcPML7C2Al1S+vHOeg46zfjK4ejB5YfpRgoxSj2nOkQvmKqlD6ALjv3und85XD0wPp2a7kWf7c8HAHnh+Mvo5eHtXhkfqS93NZ7Nsf/wSh+4H1Oi58eodzUUNbC7u8cjh6M4geeM7TEiOo8o9cG54ejF2v4gWfRdo5P+6YkLX6q7lNbofZu6Swd8+w5uhX8pmHEebttH9tBu1CH6bIy2CdWh+p3Th+fqzFR8W7q+5qxVHW8LvLSUV8s9xz6+RHtYff9aZzmUL4XUsD7ot7zCcUP1mfLSeQ19mXtusaA7bDxY3axZ0zwrgDrLT1josrGNOOTXc8tBzG/hic4n9g61nLNIvmKmn9YW9E29f62+DYGfXXr+Erxo9b3ejhfgmqT8aPEiZLd7P3U+Lzip9LFetmdOubj+3oXaYzB7Vy45XtJvpIbUzsfTEGPqfKv1rl29P6jxA/23pW/jlg/SnO6squljFoTaqTEW9UW8mAm+TimHyKN3/ziff2W/PgE5bFacw==
+   eJztWl1vIyEMpG2e+9ZKzfWhSfpw//8X3qIWnTWZAcxH2m2xhEJYYwx4bC/se9B0t5X7rTx8/t7Df2xXBfkf4FlJfum3Zryacdgzxstk1cjFviiT8eXm7tGf6aH0Ujrk5ppbM6xbYjoxXUrtSkZO/5JdnbfyHjSdtnKp4Fu0yFKym2gz58+6sqMT8KR+VsbLVv5s5Qi/WF4nzGPhY9FoSjYfbeYSrm0feZONKXwwngu0zbDRWnyweS1apMjaNtqxwkcufqQ8P5e/xvphwjxydn9ndOgZO8bHUuxLMRTjKMbS0THUSzP0bJU5a8165XrzK4YhG4OS/dg8i+l16/xqFEWclfBlsZh7Px3tI7w0Q89WmbPWrFcu5leYOyFvKX6cgs6zvjK/WvThs47h2n/G+lfHsu9KFh+lHChh0eLvEP7nVKl+AF527nXr/GrRde77nWJZC2HuNAPj1ra9/Tz2bnE4gxY+fh8lm0plz/vfisNa+sn4SH5yjzmQ18d7+DGH/6n7P4Jm4QPvczx2mvL93hzAvt/tjbw+3sNvefe6PreiWfhAH+WJ4+o8o1WHPe6/18d7+H8TPp638tTY7zH04QPPoq2PR3/m2Qd1n+ol9e7G7mLsGRV+s4DfNMw4b2dnZEfSxs7+GS/rg3NiMtS8c/z4XK2JynfT3HvWcoQMRq34iPqw+/60TudwfUbdEj963iEVPticLSYR1ziX3rjGCMdh68f0Ys9YwbsClFt6xorqG+sMTzaeWwxie42Noz+xMkbiJNmK8j9srKib2j+2hq346M0BVH6l8FFrey2YL5Eak+GjhImS3mx/amxe4VPxolx2p47tuF9voo45uPWFI/cl2UpuTa0/OAa9psq+vL529vtHCR9s35W9zogfJZ+u9PL0UTGhppRwq8ZCHJxJO67pX1HHb37xvn4kPv4BGZpoyw==
   </data>
  </layer>
 </map>
