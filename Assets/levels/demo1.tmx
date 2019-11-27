@@ -9,9 +9,9 @@
  </layer>
  <objectgroup id="7" name="objects">
   <object id="8" name="system" type="Charger" x="2608" y="144" width="32" height="64"/>
-  <object id="9" name="slimer" type="slime" x="2480" y="176" width="16" height="16"/>
-  <object id="10" name="slimer" type="slime" x="2576" y="176" width="16" height="16"/>
-  <object id="11" name="beefboy" type="beefboy" x="2800" y="192" width="16" height="16"/>
+  <object id="9" name="slimer" type="slime_spawner" x="2480" y="176" width="16" height="16"/>
+  <object id="10" name="slimer" type="slime_spawner" x="2576" y="176" width="16" height="16"/>
+  <object id="11" name="beefboy" type="beefboy_spawner" x="2800" y="192" width="16" height="16"/>
   <object id="12" name="lavablock" type="lavablock" x="496" y="16" width="32" height="32"/>
   <object id="14" name="player" type="player" x="64" y="80" width="16" height="16"/>
   <object id="15" name="lavablock" type="lavablock" x="758" y="16.6667" width="32" height="32"/>
@@ -22,58 +22,58 @@
     <property name="text" value="Hello, world"/>
    </properties>
   </object>
-  <object id="19" name="slimer" type="slime" x="2416" y="191" width="16" height="16"/>
-  <object id="20" name="slimer" type="slime" x="2320" y="173" width="16" height="16"/>
-  <object id="21" name="slimer" type="slime" x="2128" y="174.5" width="16" height="16"/>
-  <object id="22" name="slimer" type="slime" x="2208.5" y="46.5" width="16" height="16"/>
-  <object id="23" name="slimer" type="slime" x="2016" y="94.5" width="16" height="16"/>
-  <object id="24" name="slimer" type="slime" x="1855.5" y="46.5" width="16" height="16"/>
-  <object id="25" name="slimer" type="slime" x="1841" y="126" width="16" height="16"/>
-  <object id="26" name="slimer" type="slime" x="1648.5" y="126" width="16" height="16"/>
-  <object id="27" name="slimer" type="slime" x="1632" y="46.5" width="16" height="16"/>
-  <object id="28" name="slimer" type="slime" x="1344" y="46.5" width="16" height="16"/>
-  <object id="29" name="slimer" type="slime" x="1263" y="46" width="16" height="16"/>
-  <object id="30" name="slimer" type="slime" x="1181" y="78.5" width="16" height="16"/>
-  <object id="31" name="slimer" type="slime" x="1167" y="174.5" width="16" height="16"/>
-  <object id="32" name="slimer" type="slime" x="1214.5" y="174" width="16" height="16"/>
-  <object id="33" name="slimer" type="slime" x="1087.5" y="174" width="16" height="16"/>
-  <object id="34" name="slimer" type="slime" x="880" y="126.5" width="16" height="16"/>
-  <object id="35" name="slimer" type="slime" x="623.5" y="142.5" width="16" height="16"/>
-  <object id="36" name="slimer" type="slime" x="655" y="46.5" width="16" height="16"/>
-  <object id="37" name="slimer" type="slime" x="591.5" y="47" width="16" height="16"/>
-  <object id="38" name="slimer" type="slime" x="384" y="142" width="16" height="16"/>
-  <object id="39" name="slimer" type="slime" x="254.5" y="174" width="16" height="16"/>
-  <object id="40" name="slimer" type="slime" x="160" y="221" width="16" height="16"/>
-  <object id="41" name="bat" type="bat" x="688" y="96.3333" width="16" height="16"/>
-  <object id="42" name="bat" type="bat" x="576" y="97" width="16" height="16"/>
-  <object id="43" name="bat" type="bat" x="623.667" y="16.6667" width="16" height="16"/>
-  <object id="44" name="bat" type="bat" x="880" y="17" width="16" height="16"/>
-  <object id="45" name="bat" type="bat" x="1343.5" y="17.5" width="16" height="16"/>
-  <object id="46" name="bat" type="bat" x="1264" y="17" width="16" height="16"/>
-  <object id="47" name="bat" type="bat" x="1167" y="17" width="16" height="16"/>
-  <object id="48" name="bat" type="bat" x="1248.5" y="129" width="16" height="16"/>
-  <object id="49" name="bat" type="bat" x="1184.5" y="128.5" width="16" height="16"/>
-  <object id="50" name="bat" type="bat" x="1360" y="97.5" width="16" height="16"/>
-  <object id="51" name="bat" type="bat" x="1583.5" y="97.5" width="16" height="16"/>
-  <object id="52" name="bat" type="bat" x="1680.5" y="97" width="16" height="16"/>
-  <object id="53" name="bat" type="bat" x="1808.5" y="97" width="16" height="16"/>
-  <object id="54" name="bat" type="bat" x="1904.5" y="96.5" width="16" height="16"/>
-  <object id="55" name="bat" type="bat" x="1903.5" y="17.5" width="16" height="16"/>
-  <object id="56" name="bat" type="bat" x="1679.5" y="17" width="16" height="16"/>
-  <object id="57" name="bat" type="bat" x="1600" y="17" width="16" height="16"/>
-  <object id="58" name="bat" type="bat" x="1808" y="17.5" width="16" height="16"/>
-  <object id="59" name="bat" type="bat" x="2159" y="17" width="16" height="16"/>
-  <object id="60" name="bat" type="bat" x="2270.5" y="17" width="16" height="16"/>
-  <object id="61" name="bat" type="bat" x="2255" y="97.5" width="16" height="16"/>
-  <object id="62" name="bat" type="bat" x="2160.5" y="97.5" width="16" height="16"/>
-  <object id="63" name="beefboy" type="beefboy" x="2240" y="174" width="16" height="16"/>
-  <object id="64" name="beefboy" type="beefboy" x="2395.5" y="191" width="16" height="16"/>
-  <object id="65" name="beefboy" type="beefboy" x="2239.5" y="46.5" width="16" height="16"/>
-  <object id="66" name="beefboy" type="beefboy" x="1889" y="46.5" width="16" height="16"/>
-  <object id="67" name="beefboy" type="beefboy" x="1668" y="46.5" width="16" height="16"/>
-  <object id="68" name="beefboy" type="beefboy" x="1744" y="174" width="16" height="16"/>
-  <object id="69" name="beefboy" type="beefboy" x="1927.5" y="174.5" width="16" height="16"/>
-  <object id="70" name="bat" type="bat" x="383.333" y="18" width="16" height="16"/>
+  <object id="19" name="slimer" type="slime_spawner" x="2416" y="191" width="16" height="16"/>
+  <object id="20" name="slimer" type="slime_spawner" x="2320" y="173" width="16" height="16"/>
+  <object id="21" name="slimer" type="slime_spawner" x="2128" y="174.5" width="16" height="16"/>
+  <object id="22" name="slimer" type="slime_spawner" x="2208.5" y="46.5" width="16" height="16"/>
+  <object id="23" name="slimer" type="slime_spawner" x="2016" y="94.5" width="16" height="16"/>
+  <object id="24" name="slimer" type="slime_spawner" x="1855.5" y="46.5" width="16" height="16"/>
+  <object id="25" name="slimer" type="slime_spawner" x="1841" y="126" width="16" height="16"/>
+  <object id="26" name="slimer" type="slime_spawner" x="1648.5" y="126" width="16" height="16"/>
+  <object id="27" name="slimer" type="slime_spawner" x="1632" y="46.5" width="16" height="16"/>
+  <object id="28" name="slimer" type="slime_spawner" x="1344" y="46.5" width="16" height="16"/>
+  <object id="29" name="slimer" type="slime_spawner" x="1263" y="46" width="16" height="16"/>
+  <object id="30" name="slimer" type="slime_spawner" x="1181" y="78.5" width="16" height="16"/>
+  <object id="31" name="slimer" type="slime_spawner" x="1167" y="174.5" width="16" height="16"/>
+  <object id="32" name="slimer" type="slime_spawner" x="1214.5" y="174" width="16" height="16"/>
+  <object id="33" name="slimer" type="slime_spawner" x="1087.5" y="174" width="16" height="16"/>
+  <object id="34" name="slimer" type="slime_spawner" x="880" y="126.5" width="16" height="16"/>
+  <object id="35" name="slimer" type="slime_spawner" x="623.5" y="142.5" width="16" height="16"/>
+  <object id="36" name="slimer" type="slime_spawner" x="655" y="46.5" width="16" height="16"/>
+  <object id="37" name="slimer" type="slime_spawner" x="591.5" y="47" width="16" height="16"/>
+  <object id="38" name="slimer" type="slime_spawner" x="384" y="142" width="16" height="16"/>
+  <object id="39" name="slimer" type="slime_spawner" x="254.5" y="174" width="16" height="16"/>
+  <object id="40" name="slimer" type="slime_spawner" x="160" y="221" width="16" height="16"/>
+  <object id="41" name="bat" type="bat_spawner" x="688" y="96.3333" width="16" height="16"/>
+  <object id="42" name="bat" type="bat_spawner" x="576" y="97" width="16" height="16"/>
+  <object id="43" name="bat" type="bat_spawner" x="623.667" y="16.6667" width="16" height="16"/>
+  <object id="44" name="bat" type="bat_spawner" x="880" y="17" width="16" height="16"/>
+  <object id="45" name="bat" type="bat_spawner" x="1343.5" y="17.5" width="16" height="16"/>
+  <object id="46" name="bat" type="bat_spawner" x="1264" y="17" width="16" height="16"/>
+  <object id="47" name="bat" type="bat_spawner" x="1167" y="17" width="16" height="16"/>
+  <object id="48" name="bat" type="bat_spawner" x="1248.5" y="129" width="16" height="16"/>
+  <object id="49" name="bat" type="bat_spawner" x="1184.5" y="128.5" width="16" height="16"/>
+  <object id="50" name="bat" type="bat_spawner" x="1360" y="97.5" width="16" height="16"/>
+  <object id="51" name="bat" type="bat_spawner" x="1583.5" y="97.5" width="16" height="16"/>
+  <object id="52" name="bat" type="bat_spawner" x="1680.5" y="97" width="16" height="16"/>
+  <object id="53" name="bat" type="bat_spawner" x="1808.5" y="97" width="16" height="16"/>
+  <object id="54" name="bat" type="bat_spawner" x="1904.5" y="96.5" width="16" height="16"/>
+  <object id="55" name="bat" type="bat_spawner" x="1903.5" y="17.5" width="16" height="16"/>
+  <object id="56" name="bat" type="bat_spawner" x="1679.5" y="17" width="16" height="16"/>
+  <object id="57" name="bat" type="bat_spawner" x="1600" y="17" width="16" height="16"/>
+  <object id="58" name="bat" type="bat_spawner" x="1808" y="17.5" width="16" height="16"/>
+  <object id="59" name="bat" type="bat_spawner" x="2159" y="17" width="16" height="16"/>
+  <object id="60" name="bat" type="bat_spawner" x="2270.5" y="17" width="16" height="16"/>
+  <object id="61" name="bat" type="bat_spawner" x="2255" y="97.5" width="16" height="16"/>
+  <object id="62" name="bat" type="bat_spawner" x="2160.5" y="97.5" width="16" height="16"/>
+  <object id="63" name="beefboy" type="beefboy_spawner" x="2240" y="174" width="16" height="16"/>
+  <object id="64" name="beefboy" type="beefboy_spawner" x="2395.5" y="191" width="16" height="16"/>
+  <object id="65" name="beefboy" type="beefboy_spawner" x="2239.5" y="46.5" width="16" height="16"/>
+  <object id="66" name="beefboy" type="beefboy_spawner" x="1889" y="46.5" width="16" height="16"/>
+  <object id="67" name="beefboy" type="beefboy_spawner" x="1668" y="46.5" width="16" height="16"/>
+  <object id="68" name="beefboy" type="beefboy_spawner" x="1744" y="174" width="16" height="16"/>
+  <object id="69" name="beefboy" type="beefboy_spawner" x="1927.5" y="174.5" width="16" height="16"/>
+  <object id="70" name="bat" type="bat_spawner" x="383.333" y="18" width="16" height="16"/>
  </objectgroup>
  <layer id="24" name="lava" width="200" height="16">
   <data encoding="base64" compression="zlib">
