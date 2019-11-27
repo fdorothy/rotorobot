@@ -32,12 +32,15 @@ public class Player : MonoBehaviour
 
     public ParticleSystem jetParticles;
 
+    protected Creature creature;
+
     // Start is called before the first frame update
     void Start()
     {
         m_Character = GetComponent<PlatformerCharacter2D>();
         m_RigidBody = GetComponent<Rigidbody2D>();
         m_Animator = GetComponent<Animator>();
+        creature = GetComponent<Creature>();
         canLaunch = false;
         launching = false;
 
@@ -46,6 +49,9 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (creature.hitpoints == 0) {
+            return;
+        }
         float h = CrossPlatformInputManager.GetAxis("Horizontal");
         float v = CrossPlatformInputManager.GetAxis("Vertical");
         bool jump = CrossPlatformInputManager.GetButtonDown("Jump");
@@ -92,6 +98,10 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (creature.hitpoints == 0) {
+            this.m_RigidBody.velocity = Vector2.zero;
+            return;
+        }
         if (launching) return;
 
         // Read the inputs.
@@ -194,5 +204,17 @@ public class Player : MonoBehaviour
     {
         shooting = false;
         m_Animator.SetBool("Shooting", false);
+    }
+
+    public void OnHit() {
+
+    }
+
+    public void OnDying() {
+    }
+
+    public void OnDead() {
+        Debug.Log("Changing scene to title");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Title");
     }
 }

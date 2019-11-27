@@ -324,6 +324,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1237434497868187897, guid: a8e9ca2803a47c8b2a6321a0488e9417,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 3472c176bda4fc285a0cf7918aa29a9e, type: 2}
     - target: {fileID: 6760210789797998825, guid: a8e9ca2803a47c8b2a6321a0488e9417,
         type: 3}
       propertyPath: m_ColliderPaths.Array.size
@@ -5979,11 +5984,6 @@ PrefabInstance:
       propertyPath: m_CompositePaths.m_Paths.Array.data[3].Array.data[7].y
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 1237434497868187897, guid: a8e9ca2803a47c8b2a6321a0488e9417,
-        type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: 3472c176bda4fc285a0cf7918aa29a9e, type: 2}
     - target: {fileID: -7908522961169677065, guid: a8e9ca2803a47c8b2a6321a0488e9417,
         type: 3}
       propertyPath: scalingMode

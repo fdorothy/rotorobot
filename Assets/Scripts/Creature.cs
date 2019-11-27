@@ -9,6 +9,7 @@ public class Creature : MonoBehaviour
     public int hitpoints = 1;
     public SpriteRenderer spriteRenderer;
     protected bool dead = false;
+    public bool destroyOnKilled = true;
 
     protected Material material;
 
@@ -19,9 +20,6 @@ public class Creature : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        OnHit = new UnityEvent();
-        OnDying = new UnityEvent();
-        OnDead = new UnityEvent();
         spriteRenderer = this.transform.GetComponentInChildren<SpriteRenderer>();
         material = spriteRenderer.material;
     }
@@ -33,10 +31,12 @@ public class Creature : MonoBehaviour
             return;
         }
         hitpoints -= damage;
-        OnHit.Invoke();
+        if (OnHit != null)
+            OnHit.Invoke();
         if (hitpoints <= 0)
         {
-            OnDying.Invoke();
+            if (OnDying != null)
+                OnDying.Invoke();
             dead = true;
             StartCoroutine(FlashingDeath());
         }
@@ -71,12 +71,16 @@ public class Creature : MonoBehaviour
             material.SetFloat("SolidColor", 0.0f);
             yield return new WaitForSeconds(0.1f);
         }
-        OnDead.Invoke();
-        Destroy(this.gameObject);
-
+        if (OnDead != null)
+            OnDead.Invoke();
+        if (destroyOnKilled)
+        {
+            Destroy(this.gameObject);
+        }
     }
-    
-    public void Shake(float duration) {
+
+    public void Shake(float duration)
+    {
         spriteRenderer.transform.DOShakePosition(duration, new Vector3(0.2f, 0.0f, 0.0f), 20, 90, false, true);
     }
 }
