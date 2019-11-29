@@ -98,6 +98,9 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (creature.stunned) {
+            return;
+        }
         if (creature.hitpoints == 0) {
             this.m_RigidBody.velocity = Vector2.zero;
             return;

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="32" height="16" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="5">
+ <tileset firstgid="1" source="../graphics/grotto_escape.tsx"/>
+ <layer id="1" name="ground" width="32" height="16">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA1NmYGBQHsV0B6P2j9o/aj92+6npLmLsGGz20wOM2j+KQRgATcYmugAIAAA=
+  </data>
+ </layer>
+ <objectgroup id="2" name="objects">
+  <object id="1" name="player" type="player" x="95" y="98.5" width="24" height="26.5"/>
+  <object id="2" name="slimer" type="slime_spawner" x="299" y="190.5" width="25" height="28.5"/>
+  <object id="3" name="bat" type="bat_spawner" x="284" y="48.5" width="25" height="28.5"/>
+  <object id="4" name="beefboy" type="beefboy_spawner" x="396.5" y="188.5" width="25" height="28.5"/>
+ </objectgroup>
+</map>

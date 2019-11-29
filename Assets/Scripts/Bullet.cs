@@ -92,7 +92,8 @@ public class Bullet : MonoBehaviour
             Creature m = hit.transform.GetComponent<Creature>();
             if (m)
             {
-                m.Hit(1);
+                Debug.Log("hit with dir = " + dir.ToString());
+                m.Hit(1, 5.0f * dir.normalized);
             }
         }
         else

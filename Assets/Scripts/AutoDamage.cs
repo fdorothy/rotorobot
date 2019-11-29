@@ -8,10 +8,11 @@ public class AutoDamage : MonoBehaviour
 
     public int damage = 1;
 
-    void OnTriggerEnter2D(Collider2D collider2D) {
+    void OnTriggerStay2D(Collider2D collider2D) {
         if (collider2D.tag == enemyTag) {
             Creature c = collider2D.GetComponent<Creature>();
-            c.Hit(damage);
+            Vector2 dir = c.transform.position - transform.position;
+            c.Hit(damage, (dir.normalized + Vector2.up) * 15.0f);
         }
     }
 }

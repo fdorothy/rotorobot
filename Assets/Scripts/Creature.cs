@@ -17,22 +17,33 @@ public class Creature : MonoBehaviour
     public UnityEvent OnDying;
     public UnityEvent OnDead;
 
+    public float invulnerableTime = 0.5f;
+    public bool invulnerable = false;
+
+    public bool stunned = false;
+
+    public float stunTime = 0.25f;
+
+    public Rigidbody2D rigidbody2d;
+
     // Start is called before the first frame update
     void Start()
     {
+        rigidbody2d = this.transform.GetComponentInChildren<Rigidbody2D>();
         spriteRenderer = this.transform.GetComponentInChildren<SpriteRenderer>();
         material = spriteRenderer.material;
     }
 
-    public void Hit(int damage)
+    public void Hit(int damage, Vector2 dir)
     {
-        if (dead)
+        if (dead || invulnerable)
         {
             return;
         }
         hitpoints -= damage;
         if (OnHit != null)
             OnHit.Invoke();
+        rigidbody2d.AddForce(dir, ForceMode2D.Impulse);
         if (hitpoints <= 0)
         {
             if (OnDying != null)
@@ -42,6 +53,7 @@ public class Creature : MonoBehaviour
         }
         else
         {
+            StartCoroutine(Stun());
             StartCoroutine(Pain());
         }
     }
@@ -51,12 +63,27 @@ public class Creature : MonoBehaviour
     public IEnumerator Pain()
     {
         Shake(0.2f);
-        //spriteRenderer.color = Color.red;
-        material.SetFloat("SolidColor", 1.0f);
-        yield return new WaitForSeconds(0.1f);
-        spriteRenderer.color = Color.white;
-        material.SetFloat("SolidColor", 0.0f);
-        yield return new WaitForSeconds(0.1f);
+        float t = 0.0f;
+        float dt = 0.1f;
+        invulnerable = true;
+        while (t < invulnerableTime)
+        {
+            spriteRenderer.color = Color.white;
+            material.SetFloat("SolidColor", 1.0f);
+            yield return new WaitForSeconds(dt);
+            spriteRenderer.color = Color.white;
+            material.SetFloat("SolidColor", 0.0f);
+            yield return new WaitForSeconds(dt);
+            t += 2 * dt;
+        }
+        invulnerable = false;
+    }
+
+    public IEnumerator Stun()
+    {
+        stunned = true;
+        yield return new WaitForSeconds(stunTime);
+        stunned = false;
     }
 
     public IEnumerator FlashingDeath()

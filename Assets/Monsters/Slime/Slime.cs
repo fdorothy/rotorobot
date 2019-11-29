@@ -32,32 +32,51 @@ public class Slime : MonoBehaviour
         StartCoroutine(WalkRoutine());
     }
 
-    public void FixedUpdate() {
-        if (monster.IsDead()) {
+    public void FixedUpdate()
+    {
+        if (monster.IsDead())
+        {
             rb.velocity = Vector2.zero;
             return;
         }
-        if (!floorCheck()) {
-            rb.velocity = new Vector2(0.0f, rb.velocity.y);
+        if (!floorCheck())
+        {
+            if (!monster.stunned)
+            {
+                rb.velocity = new Vector2(0.0f, rb.velocity.y);
+            }
         }
     }
 
-    public IEnumerator WalkRoutine() {
-        while (true) {
-        if (safeToSlide()) {
-            anim.SetTrigger("Slide");
-            rb.velocity = new Vector2(slideForce * facing, 0.0f);
-            yield return new WaitForSeconds(slideTime);
-            rb.velocity = new Vector2(0.0f, 0.0f);
-            yield return new WaitForSeconds(waitTime);
-        } else {
-            turnAround();
-            yield return new WaitForSeconds(turnTime);
-        }
+    public IEnumerator WalkRoutine()
+    {
+        while (true)
+        {
+            if (safeToSlide())
+            {
+                if (!monster.stunned)
+                {
+                    anim.SetTrigger("Slide");
+                    rb.velocity = new Vector2(slideForce * facing, 0.0f);
+                }
+                yield return new WaitForSeconds(slideTime);
+                if (!monster.stunned)
+                {
+                    rb.velocity = new Vector2(0.0f, 0.0f);
+                }
+                yield return new WaitForSeconds(waitTime);
+            }
+            else
+            {
+                if (!monster.stunned)
+                    turnAround();
+                yield return new WaitForSeconds(turnTime);
+            }
         }
     }
 
-    public void turnAround() {
+    public void turnAround()
+    {
         facing *= -1.0f;
 
         // Multiply the player's x local scale by -1.
@@ -66,11 +85,13 @@ public class Slime : MonoBehaviour
         transform.localScale = theScale;
     }
 
-    public void shoot() {
+    public void shoot()
+    {
         Transform bullet = Instantiate(bulletPrefab);
     }
 
-    public bool safeToSlide() {
+    public bool safeToSlide()
+    {
         bool ground = Physics2D.OverlapCircle(groundCheck.position, .1f, whatIsGround);
         Vector2 v = new Vector3(facing, 0.0f, 0.0f);
         RaycastHit2D hit = Physics2D.Raycast(wallCheck.position, v, 0.5f, whatIsGround);
@@ -81,7 +102,8 @@ public class Slime : MonoBehaviour
         return (!wall && floor);
     }
 
-    public bool floorCheck() {
+    public bool floorCheck()
+    {
         Vector3 v = new Vector3(0.0f, -1.0f, 0.0f);
         RaycastHit2D hit = Physics2D.Raycast(wallCheck.position, v, 0.5f, whatIsGround);
         bool floor = (hit.collider != null);
