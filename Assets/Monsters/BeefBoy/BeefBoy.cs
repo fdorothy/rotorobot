@@ -32,15 +32,16 @@ public class BeefBoy : MonoBehaviour
 
     public void FixedUpdate()
     {
+        if (monster.stunned) return;
         if (monster.IsDead())
         {
-            rb.velocity = Vector2.zero;
+            //rb.velocity = Vector2.zero;
         }
         else
         {
             if (!floorCheck())
             {
-                rb.velocity = new Vector2(0.0f, rb.velocity.y);
+                //rb.velocity = new Vector2(0.0f, rb.velocity.y);
             }
         }
     }
@@ -53,9 +54,11 @@ public class BeefBoy : MonoBehaviour
             {
                 anim.SetTrigger("Hop");
                 yield return new WaitForSeconds(.1f);
-                rb.velocity = new Vector2(slideForce * facing, 0.0f);
+                if (!monster.stunned)
+                    rb.velocity = new Vector2(slideForce * facing, 5.0f);
                 yield return new WaitForSeconds(slideTime);
-                rb.velocity = new Vector2(0.0f, 0.0f);
+                if (!monster.stunned)
+                    rb.velocity = new Vector2(0.0f, 0.0f);
                 yield return new WaitForSeconds(waitTime);
             }
             else

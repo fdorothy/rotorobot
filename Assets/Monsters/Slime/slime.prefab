@@ -190,7 +190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   facing: 1
-  slideForce: 1
+  slideForce: 4
   groundCheck: {fileID: 1626203092783174291}
   wallCheck: {fileID: 1626203092175496513}
   slideTime: 0.5
@@ -228,7 +228,7 @@ MonoBehaviour:
   invulnerableTime: 0.5
   invulnerable: 0
   stunned: 0
-  stunTime: 0.25
+  stunTime: 0.5
   rigidbody2d: {fileID: 0}
 --- !u!1 &1626203092175496512
 GameObject:

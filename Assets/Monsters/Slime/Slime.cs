@@ -34,9 +34,10 @@ public class Slime : MonoBehaviour
 
     public void FixedUpdate()
     {
+        if (monster.stunned) return;
         if (monster.IsDead())
         {
-            rb.velocity = Vector2.zero;
+            //rb.velocity = Vector2.zero;
             return;
         }
         if (!floorCheck())

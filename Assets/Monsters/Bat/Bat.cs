@@ -33,6 +33,7 @@ public class Bat : MonoBehaviour
 
     public void FixedUpdate()
     {
+        if (monster.stunned) return;
         if (monster.IsDead())
         {
             rb.velocity = Vector2.zero;
@@ -74,12 +75,16 @@ public class Bat : MonoBehaviour
         }
     }
 
-    public IEnumerator MoveRoutine() {
-        while (true) {
-            rb.velocity = new Vector3(1.0f, rb.velocity.y, 0.0f);
+    public IEnumerator MoveRoutine()
+    {
+        while (true)
+        {
+            if (!monster.stunned)
+                rb.velocity = new Vector3(1.0f, rb.velocity.y, 0.0f);
             yield return new WaitForSeconds(4.0f);
             turnAround();
-            rb.velocity = new Vector3(-1.0f, rb.velocity.y, 0.0f);
+            if (!monster.stunned)
+                rb.velocity = new Vector3(-1.0f, rb.velocity.y, 0.0f);
             yield return new WaitForSeconds(4.0f);
             turnAround();
         }

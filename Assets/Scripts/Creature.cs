@@ -36,26 +36,30 @@ public class Creature : MonoBehaviour
 
     public void Hit(int damage, Vector2 dir)
     {
-        if (dead || invulnerable)
-        {
-            return;
-        }
-        hitpoints -= damage;
         if (OnHit != null)
             OnHit.Invoke();
         rigidbody2d.AddForce(dir, ForceMode2D.Impulse);
+        StartCoroutine(Stun());
+        if (dead || invulnerable)
+            return;
+        hitpoints -= damage;
         if (hitpoints <= 0)
         {
-            if (OnDying != null)
-                OnDying.Invoke();
-            dead = true;
-            StartCoroutine(FlashingDeath());
+            Kill();
         }
         else
         {
-            StartCoroutine(Stun());
             StartCoroutine(Pain());
         }
+    }
+
+    public void Kill()
+    {
+        hitpoints = 0;
+        if (OnDying != null)
+            OnDying.Invoke();
+        dead = true;
+        StartCoroutine(FlashingDeath());
     }
 
     public bool IsDead() { return hitpoints <= 0; }

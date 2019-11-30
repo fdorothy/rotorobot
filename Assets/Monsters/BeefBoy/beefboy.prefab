@@ -189,11 +189,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   facing: 1
-  slideForce: 1
+  slideForce: 4
   groundCheck: {fileID: 1626203092783174291}
   wallCheck: {fileID: 1626203092175496513}
-  slideTime: 0.5
-  waitTime: 0.5
+  slideTime: 1
+  waitTime: 0.25
   turnTime: 0.5
   whatIsGround:
     serializedVersion: 2
