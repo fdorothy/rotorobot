@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.1" orientation="orthogonal" renderorder="right-down" width="96" height="16" tilewidth="16" tileheight="16" nextobjectid="6">
+ <tileset firstgid="1" source="../graphics/grotto_escape.tsx"/>
+ <objectgroup name="objects">
+  <object id="1" name="player" type="player" x="80" y="208" width="16" height="16"/>
+  <object id="2" name="slimer" type="slime_spawner" x="304" y="208" width="16" height="16"/>
+  <object id="3" name="slimer" type="slime_spawner" x="800" y="208" width="16" height="16"/>
+  <object id="4" name="slimer" type="slime_spawner" x="1216" y="208" width="16" height="16"/>
+  <object id="5" name="GameEnd" type="GameEnd" x="1424" y="160" width="16" height="16"/>
+ </objectgroup>
+ <layer name="ground" width="96" height="16">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAE+1TQQ6DIBD0gtf2ZGvbQ5Ue/P8LCwkkmykK0tAx6U4yEZWdHcZ16RRMLGwDfw7NnwvNnwvNnwvNnwvNnwvNnwvNn4uj5D+wDZBwhPxPjme2iS/h56fmHOz8ve+L47Vxj5b/V9SvOUfL/J+Z93FeWs5/zVzu+VZS/5fzn/M4ZLTlvKTmZnR8bNyXZLQ1l6iHNTX6NfPvfdwE7ytr9DrCPmSuLrevxHesl1epKZ+V6EfNEr1UX8xujfLMk6N1nAPlOt57vhxNYB/qcI8FDawz0M8m9PsVGrhOUJ/qL/2hD6TUnBPM9bLdZ46p/ZjpGwZfHAUAGAAA
+  </data>
+ </layer>
+ <layer name="background" width="96" height="16">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAE+3BAQ0AAADCoPdPbQ8HFAAAAAAA8GY/w/7KABgAAA==
+  </data>
+ </layer>
+</map>

@@ -120,12 +120,98 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &229283173 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3161977668705310465, guid: 8743fe769d2614df485b3e8671fcacbc,
+--- !u!1001 &233043529
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 9200431395625698944, guid: 69f2147327ad04692a5b36458c0daec4,
+        type: 3}
+      propertyPath: m_Name
+      value: Alien
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200431395625698958, guid: 69f2147327ad04692a5b36458c0daec4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200431395625698958, guid: 69f2147327ad04692a5b36458c0daec4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200431395625698958, guid: 69f2147327ad04692a5b36458c0daec4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200431395625698958, guid: 69f2147327ad04692a5b36458c0daec4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200431395625698958, guid: 69f2147327ad04692a5b36458c0daec4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200431395625698958, guid: 69f2147327ad04692a5b36458c0daec4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200431395625698958, guid: 69f2147327ad04692a5b36458c0daec4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200431395625698958, guid: 69f2147327ad04692a5b36458c0daec4,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200431395625698958, guid: 69f2147327ad04692a5b36458c0daec4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200431395625698958, guid: 69f2147327ad04692a5b36458c0daec4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200431395625698958, guid: 69f2147327ad04692a5b36458c0daec4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200431395625698945, guid: 69f2147327ad04692a5b36458c0daec4,
+        type: 3}
+      propertyPath: portraits.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9200431395625698945, guid: 69f2147327ad04692a5b36458c0daec4,
+        type: 3}
+      propertyPath: portraits.Array.data[1]
+      value: 
+      objectReference: {fileID: 7009719028657516258, guid: b320e7eaeecc24dbfa7577107678382f,
+        type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 69f2147327ad04692a5b36458c0daec4, type: 3}
+--- !u!114 &233043530 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9200431395625698945, guid: 69f2147327ad04692a5b36458c0daec4,
     type: 3}
-  m_PrefabInstance: {fileID: 3161977668913545828}
+  m_PrefabInstance: {fileID: 233043529}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &367500926
 GameObject:
   m_ObjectHideFlags: 0
@@ -314,28 +400,20 @@ GameObject:
   - component: {fileID: 1385149718}
   - component: {fileID: 1385149720}
   - component: {fileID: 1385149722}
-  - component: {fileID: 1385149719}
   - component: {fileID: 1385149724}
   - component: {fileID: 1385149723}
   - component: {fileID: 1385149727}
   - component: {fileID: 1385149726}
   - component: {fileID: 1385149725}
-  - component: {fileID: 1385149728}
-  - component: {fileID: 1385149729}
-  - component: {fileID: 1385149730}
-  - component: {fileID: 1385149731}
-  - component: {fileID: 1385149732}
   - component: {fileID: 1385149733}
-  - component: {fileID: 1385149734}
-  - component: {fileID: 1385149735}
   - component: {fileID: 1385149736}
   - component: {fileID: 1385149737}
-  - component: {fileID: 1385149738}
-  - component: {fileID: 1385149739}
-  - component: {fileID: 1385149740}
   - component: {fileID: 1385149741}
   - component: {fileID: 1385149743}
   - component: {fileID: 1385149742}
+  - component: {fileID: 1385149744}
+  - component: {fileID: 1385149745}
+  - component: {fileID: 1385149719}
   m_Layer: 0
   m_Name: IntroFlowchart
   m_TagString: Untagged
@@ -359,7 +437,7 @@ MonoBehaviour:
   scrollPos: {x: -124, y: 100}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 280
+  blockViewHeight: 435
   zoom: 1
   scrollViewRect:
     serializedVersion: 2
@@ -369,8 +447,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1385149723}
-  selectedCommands:
-  - {fileID: 1385149725}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -403,32 +480,35 @@ MonoBehaviour:
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 0
-  blockName: Intro
+  blockName: Capture
   description: 
   eventHandler: {fileID: 1385149720}
   commandList:
   - {fileID: 1385149722}
   - {fileID: 1385149719}
   - {fileID: 1385149724}
+  - {fileID: 1385149744}
+  - {fileID: 1385149745}
   - {fileID: 1385149727}
 --- !u!114 &1385149719
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1385149716}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 3
+  itemId: 27
   indentLevel: 0
-  _duration:
-    floatRef: {fileID: 0}
-    floatVal: 3
-  durationOLD: 0
+  duration: 1
+  targetAlpha: 0
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
 --- !u!114 &1385149720
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -471,7 +551,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 2
   indentLevel: 0
-  sayDialog: {fileID: 1463535484}
+  sayDialog: {fileID: 1650075860}
 --- !u!114 &1385149723
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -488,31 +568,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 276
     y: 52
-    width: 126
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 5
-  blockName: DistressSignal
+  blockName: Finale
   description: 
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1385149726}
-  - {fileID: 1385149725}
-  - {fileID: 1385149728}
-  - {fileID: 1385149729}
-  - {fileID: 1385149730}
   - {fileID: 1385149741}
   - {fileID: 1385149736}
   - {fileID: 1385149737}
   - {fileID: 1385149733}
-  - {fileID: 1385149735}
-  - {fileID: 1385149738}
-  - {fileID: 1385149739}
-  - {fileID: 1385149734}
-  - {fileID: 1385149740}
-  - {fileID: 1385149732}
-  - {fileID: 1385149731}
+  - {fileID: 1385149725}
   - {fileID: 1385149743}
   - {fileID: 1385149742}
 --- !u!114 &1385149724
@@ -529,35 +599,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 4
   indentLevel: 0
-  storyText: 'BEGIN DIRECTIVE
-
-
-    Humans have begun spreading through the universe.
-
-
-    No intelligent life has been encountered yet, but the mathematicians believe another
-    alien race is spreading from the region space known as the Great Attractor.
-
-
-    105,821 galaxies have been colonized. The statistical proof of alien contact was
-    80,425. We are long overdue for a violent conflict, but our opponents have yet
-    to be seen.
-
-
-    The mathematicians are on edge.
-
-
-    Colonies are only allowed to expand to new systems at certain times, to ensure
-    safety in case the aliens are encountered. Combat ships with specially designed
-    fighting robots
-
-    patrol the galaxies, and keep civilians colonists in check.
-
-
-    END DIRECTIVE'
+  storyText: Hands up!
   description: 
-  character: {fileID: 2145328698}
-  portrait: {fileID: 2614870373251885436, guid: 30d40b93414092c45ae8363a6250725b,
+  character: {fileID: 954351687}
+  portrait: {fileID: -6781412095145881161, guid: f632df21ecfa26151bfdc20dd140815c,
     type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -582,8 +627,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 8
   indentLevel: 0
-  storyText: Bzz. Hello? This is a distress call from colony 280N54. We are under
-    attack. I repeat, we are under attack.
+  storyText: '...and so the alien mimic was taken to interrogation at the center of
+    the human empire. Our story ends here, for now.
+
+
+    But what will come next? Is this just the tip of the iceberg?
+
+
+    Follow @redmountainman1 on twitter for the latest news and other weird stuff.
+    Thanks for playing.'
   description: 
   character: {fileID: 2145328698}
   portrait: {fileID: 2614870373251885436, guid: 30d40b93414092c45ae8363a6250725b,
@@ -611,7 +663,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 7
   indentLevel: 0
-  sayDialog: {fileID: 1650075860}
+  sayDialog: {fileID: 7544879537853184829}
 --- !u!114 &1385149727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -633,167 +685,6 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
---- !u!114 &1385149728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1385149716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 9
-  indentLevel: 0
-  storyText: This is Robot ROTO-26, copy that. Colony 280N54, do you request assistance?
-  description: 
-  character: {fileID: 954351687}
-  portrait: {fileID: 5865078278364869351, guid: f632df21ecfa26151bfdc20dd140815c,
-    type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &1385149729
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1385149716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 10
-  indentLevel: 0
-  storyText: Bzz. Hello? This is a distress call from colony 280N54. We are under
-    attack. I repeat, we are under attack.
-  description: 
-  character: {fileID: 2145328698}
-  portrait: {fileID: 2614870373251885436, guid: 30d40b93414092c45ae8363a6250725b,
-    type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &1385149730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1385149716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 11
-  indentLevel: 0
-  storyText: 'Hmm... Must be a recording. I guess I''d better go check it out.
-
-
-    Initiating warp drive.'
-  description: 
-  character: {fileID: 954351687}
-  portrait: {fileID: 5865078278364869351, guid: f632df21ecfa26151bfdc20dd140815c,
-    type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &1385149731
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1385149716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 12
-  indentLevel: 0
-  storyText: 'Starting scan of planet
-
-
-    ...
-
-
-    There''s a valley outside of the colony. I''d better land there and walk in to
-    town in case there''s trouble.'
-  description: 
-  character: {fileID: 954351687}
-  portrait: {fileID: 5865078278364869351, guid: f632df21ecfa26151bfdc20dd140815c,
-    type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &1385149732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1385149716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 665e8847cab3749f597622c6c52997ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 13
-  indentLevel: 0
-  _targetObject:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 229283173}
-  _tweenName:
-    stringRef: {fileID: 0}
-    stringVal: 
-  _duration:
-    floatRef: {fileID: 0}
-    floatVal: 3
-  easeType: 2
-  loopType: 0
-  stopPreviousTweens: 0
-  waitUntilFinished: 1
-  targetObjectOLD: {fileID: 0}
-  tweenNameOLD: 
-  durationOLD: 0
-  _toTransform:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  _toScale:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 6, y: 6, z: 6}
-  toTransformOLD: {fileID: 0}
-  toScaleOLD: {x: 0, y: 0, z: 0}
 --- !u!114 &1385149733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -811,41 +702,6 @@ MonoBehaviour:
   targetObject: {fileID: 1707465667}
   methodName: Fast
   delay: 0
---- !u!114 &1385149734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1385149716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 15
-  indentLevel: 0
-  targetObject: {fileID: 1707465667}
-  methodName: Stop
-  delay: 0
---- !u!114 &1385149735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1385149716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 16
-  indentLevel: 0
-  _duration:
-    floatRef: {fileID: 0}
-    floatVal: 5
-  durationOLD: 0
 --- !u!114 &1385149736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -884,62 +740,6 @@ MonoBehaviour:
   waitUntilFinished: 1
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
   fadeTexture: {fileID: 0}
---- !u!114 &1385149738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1385149716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 19
-  indentLevel: 0
-  duration: 0.1
-  targetAlpha: 1
-  waitUntilFinished: 1
-  fadeColor: {r: 1, g: 1, b: 1, a: 1}
-  fadeTexture: {fileID: 0}
---- !u!114 &1385149739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1385149716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 20
-  indentLevel: 0
-  duration: 0.1
-  targetAlpha: 0
-  waitUntilFinished: 1
-  fadeColor: {r: 0, g: 0, b: 0, a: 1}
-  fadeTexture: {fileID: 0}
---- !u!114 &1385149740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1385149716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 21
-  indentLevel: 0
-  _duration:
-    floatRef: {fileID: 0}
-    floatVal: 1
-  durationOLD: 0
 --- !u!114 &1385149741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -974,7 +774,7 @@ MonoBehaviour:
   indentLevel: 0
   _sceneName:
     stringRef: {fileID: 0}
-    stringVal: Level1
+    stringVal: Title
   loadingImage: {fileID: 0}
   sceneNameOLD: 
 --- !u!114 &1385149743
@@ -996,18 +796,62 @@ MonoBehaviour:
   waitUntilFinished: 1
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
   fadeTexture: {fileID: 0}
---- !u!114 &1463535484 stripped
+--- !u!114 &1385149744
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7544879538575113280, guid: a6b8a515728624c9baab4a762a9eaa45,
-    type: 3}
-  m_PrefabInstance: {fileID: 7544879537853184828}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1385149716}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a0bbe22c246e4c78ad8e9816cbae9d5, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemId: 25
+  indentLevel: 0
+  storyText: I give up! You win.
+  description: 
+  character: {fileID: 233043530}
+  portrait: {fileID: 7009719028657516258, guid: b320e7eaeecc24dbfa7577107678382f,
+    type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1385149745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385149716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 26
+  indentLevel: 0
+  storyText: Into the holding cell. We're going for a ride.
+  description: 
+  character: {fileID: 954351687}
+  portrait: {fileID: -6781412095145881161, guid: f632df21ecfa26151bfdc20dd140815c,
+    type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &1650075860 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5539914513248171965, guid: 3ae9b013648e141d591596a9c40cc065,
@@ -1458,6 +1302,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6b8a515728624c9baab4a762a9eaa45, type: 3}
+--- !u!114 &7544879537853184829 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7544879538575113280, guid: a6b8a515728624c9baab4a762a9eaa45,
+    type: 3}
+  m_PrefabInstance: {fileID: 7544879537853184828}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a0bbe22c246e4c78ad8e9816cbae9d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &9016982934169785188
 PrefabInstance:
   m_ObjectHideFlags: 0

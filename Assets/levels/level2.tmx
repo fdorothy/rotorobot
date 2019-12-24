@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.1" orientation="orthogonal" renderorder="right-down" width="162" height="16" tilewidth="16" tileheight="16" nextobjectid="72">
+ <tileset firstgid="1" source="../graphics/grotto_escape.tsx"/>
+ <tileset firstgid="41" source="monsters.tsx"/>
+ <layer name="background" width="162" height="16">
+  <data encoding="base64" compression="zlib">
+   eJztmbEKwzAMBbXGztK6//+tjalFnoVHmUK4A5FUzdDh6FNkMwCA51GvKled4/6UqtKr8ixANs1+fvWr+9ekX0bhIeyke9fdiu5pv4Y+QDaayc1m92JG4yHswv/3PHvVOc1qLYBsPI/dxdX7ifd9dgTIptrs3WG3d4fNs2EbPYBsulfqnL6XeGbrPbkMOyih1L3V3Eguww7i/no1K+rMiIewA93T+PUlVcP37//8THg43St3rozPuq/5SN8zGyAb3RPqPBjP83S/A5CNz4R6rhy9jD4CZOOO6b5G58F41tfrC2MoCbs=
+  </data>
+ </layer>
+ <objectgroup name="objects">
+  <object id="12" name="lavablock" type="lavablock" x="496" y="16" width="32" height="32"/>
+  <object id="14" name="player" type="player" x="64" y="80" width="16" height="16"/>
+  <object id="15" name="lavablock" type="lavablock" x="758" y="16.6667" width="32" height="32"/>
+  <object id="16" name="lavablock" type="lavablock" x="1432.67" y="17.3333" width="32" height="32"/>
+  <object id="20" name="slimer" type="slime_spawner" x="2320" y="173" width="16" height="16"/>
+  <object id="21" name="slimer" type="slime_spawner" x="2128" y="174.5" width="16" height="16"/>
+  <object id="22" name="slimer" type="slime_spawner" x="2208.5" y="46.5" width="16" height="16"/>
+  <object id="23" name="slimer" type="slime_spawner" x="2016" y="94.5" width="16" height="16"/>
+  <object id="24" name="slimer" type="slime_spawner" x="1855.5" y="46.5" width="16" height="16"/>
+  <object id="25" name="slimer" type="slime_spawner" x="1936" y="176" width="16" height="16"/>
+  <object id="26" name="slimer" type="slime_spawner" x="1744" y="176" width="16" height="16"/>
+  <object id="27" name="slimer" type="slime_spawner" x="1632" y="46.5" width="16" height="16"/>
+  <object id="28" name="slimer" type="slime_spawner" x="1344" y="46.5" width="16" height="16"/>
+  <object id="29" name="slimer" type="slime_spawner" x="1263" y="46" width="16" height="16"/>
+  <object id="30" name="slimer" type="slime_spawner" x="1181" y="78.5" width="16" height="16"/>
+  <object id="31" name="slimer" type="slime_spawner" x="1167" y="174.5" width="16" height="16"/>
+  <object id="32" name="slimer" type="slime_spawner" x="1214.5" y="174" width="16" height="16"/>
+  <object id="33" name="slimer" type="slime_spawner" x="1087.5" y="174" width="16" height="16"/>
+  <object id="34" name="slimer" type="slime_spawner" x="880" y="126.5" width="16" height="16"/>
+  <object id="35" name="slimer" type="slime_spawner" x="623.5" y="142.5" width="16" height="16"/>
+  <object id="36" name="slimer" type="slime_spawner" x="655" y="46.5" width="16" height="16"/>
+  <object id="37" name="slimer" type="slime_spawner" x="591.5" y="47" width="16" height="16"/>
+  <object id="38" name="slimer" type="slime_spawner" x="384" y="142" width="16" height="16"/>
+  <object id="39" name="slimer" type="slime_spawner" x="254.5" y="174" width="16" height="16"/>
+  <object id="40" name="slimer" type="slime_spawner" x="160" y="221" width="16" height="16"/>
+  <object id="41" name="bat" type="bat_spawner" x="688" y="96.3333" width="16" height="16"/>
+  <object id="42" name="bat" type="bat_spawner" x="576" y="97" width="16" height="16"/>
+  <object id="43" name="bat" type="bat_spawner" x="623.667" y="16.6667" width="16" height="16"/>
+  <object id="44" name="bat" type="bat_spawner" x="880" y="17" width="16" height="16"/>
+  <object id="45" name="bat" type="bat_spawner" x="1343.5" y="17.5" width="16" height="16"/>
+  <object id="46" name="bat" type="bat_spawner" x="1264" y="17" width="16" height="16"/>
+  <object id="47" name="bat" type="bat_spawner" x="1167" y="17" width="16" height="16"/>
+  <object id="48" name="bat" type="bat_spawner" x="1248.5" y="129" width="16" height="16"/>
+  <object id="49" name="bat" type="bat_spawner" x="1184.5" y="128.5" width="16" height="16"/>
+  <object id="50" name="bat" type="bat_spawner" x="1360" y="97.5" width="16" height="16"/>
+  <object id="51" name="bat" type="bat_spawner" x="1583.5" y="97.5" width="16" height="16"/>
+  <object id="52" name="bat" type="bat_spawner" x="1680.5" y="97" width="16" height="16"/>
+  <object id="53" name="bat" type="bat_spawner" x="1808.5" y="97" width="16" height="16"/>
+  <object id="54" name="bat" type="bat_spawner" x="1904.5" y="96.5" width="16" height="16"/>
+  <object id="55" name="bat" type="bat_spawner" x="1903.5" y="17.5" width="16" height="16"/>
+  <object id="56" name="bat" type="bat_spawner" x="1679.5" y="17" width="16" height="16"/>
+  <object id="57" name="bat" type="bat_spawner" x="1600" y="17" width="16" height="16"/>
+  <object id="58" name="bat" type="bat_spawner" x="1808" y="17.5" width="16" height="16"/>
+  <object id="59" name="bat" type="bat_spawner" x="2159" y="17" width="16" height="16"/>
+  <object id="60" name="bat" type="bat_spawner" x="2270.5" y="17" width="16" height="16"/>
+  <object id="61" name="bat" type="bat_spawner" x="2255" y="97.5" width="16" height="16"/>
+  <object id="62" name="bat" type="bat_spawner" x="2160.5" y="97.5" width="16" height="16"/>
+  <object id="70" name="bat" type="bat_spawner" x="383.333" y="18" width="16" height="16"/>
+  <object id="71" name="GameEnd" type="GameEnd" x="2480" y="160" width="16" height="16"/>
+ </objectgroup>
+ <layer name="lava" width="162" height="16">
+  <data encoding="base64" compression="zlib">
+   eJzt1csKgCAQBVA3tuv/f7c2goiCIJMG58Ag+IiEy5gSAAAAAAAAp8hvXdV4deYg2j1REG0lh6Vn9nrpzr6am+r9S13tXm/A91ZyOHN29J06F2W9zkL0nbwBZ9mVw8gcyOH/yKEcjjww4giR
+  </data>
+ </layer>
+ <layer name="ground" width="162" height="16">
+  <data encoding="base64" compression="zlib">
+   eJztWdFuwyAMzNr9RJO9NO3/f+OCVCTrdgcYypJsnGQlJcYY52wIfU4aH5tcNrm+rhf4je1KUP8Kz3L2c9eS8UrGYc+YLrNVYhf7ok2ml5q7x3/mh/JL+ZCaaypmeG8R256Txn2TxyZrRm9gwCLyJnBmfd0rHt1FO7M3eDjggeXWA4TxkLUznZzewICF5ZathbU8DPvDuK5/Nvh12+SrQGd5yWyus2lfCuz0Rg8/a232ilmrXe+6/Ft1LvA5x2PL+dQ+vSUf3oEeftba7BWzVru4Llsu7snDMyPUhnn6WQ/C/d61+aiwPMRvZpVLg4dpxLMrdh6xd22uAa65PXIpxswTn8HD/4VYq6Ic5f0fxY93I+b9GddOb83y6NuzuCPty3r4EeNi91OlfIj7sda148z7X2/N8uhb3SPFp4cfmHOe+m/PLFvOLs/OQ0/N8uj/NR7amoc1C/PTM1+MaQsPGf/ZWab9Jl5AZnKN9+9a89k3+UzacHyly/rgnJgNNe+UPj5XMVH7pDj3mncc+iJXHsafdcqfXyrYetiyl1Y8vIs2O571H+fSWqcZcBwWP+YXe8YE/9NAu7lnTFTfcM94a9cny3XbrvKJ7c1uiTgxX2t52Lp2qHVZ8bD0HdfkVg5qTMbDHPdyfrP3U8ItlQdKF+2y/1iwPeW75fcsxkjlqrd29N4f5njI4qt40aMe5mqU8svTR9W4EsnlhxqL8c22fwMMTlWk
+  </data>
+ </layer>
+</map>
