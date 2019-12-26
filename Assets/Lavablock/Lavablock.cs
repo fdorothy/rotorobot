@@ -14,11 +14,22 @@ public class Lavablock : MonoBehaviour
     public Transform leftChecker, rightChecker;
     public bool isVisible = false;
 
+    public Vector3 lastPosition;
+
+    public Platform platform;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         isVisible = false;
+    }
+
+    void Update()
+    {
+        if (platform)
+            platform.AdjustTarget(transform.position - lastPosition);
+        lastPosition = this.transform.position;
     }
 
     void FixedUpdate()
