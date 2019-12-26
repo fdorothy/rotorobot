@@ -38,6 +38,7 @@ public class Creature : MonoBehaviour
     {
         if (OnHit != null)
             OnHit.Invoke();
+        SFXController.PlayClip(SFXClipName.MONSTERHIT);
         rigidbody2d.AddForce(dir, ForceMode2D.Impulse);
         StartCoroutine(Stun());
         if (dead || invulnerable)

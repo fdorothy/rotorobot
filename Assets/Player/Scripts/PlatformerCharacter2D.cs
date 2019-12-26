@@ -60,6 +60,7 @@ public class PlatformerCharacter2D : MonoBehaviour
 
     private void FixedUpdate()
     {
+        bool wasGrounded = m_Grounded;
         m_Grounded = false;
 
         // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
@@ -68,7 +69,11 @@ public class PlatformerCharacter2D : MonoBehaviour
         for (int i = 0; i < colliders.Length; i++)
         {
             if (colliders[i].gameObject != gameObject)
+            {
+                if (!wasGrounded)
+                    SFXController.PlayClip(SFXClipName.JUMP);
                 m_Grounded = true;
+            }
         }
         m_Anim.SetBool("Ground", m_Grounded);
 
@@ -131,6 +136,7 @@ public class PlatformerCharacter2D : MonoBehaviour
             m_Anim.SetTrigger("Jump");
             m_Anim.SetBool("Ground", false);
             m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+            SFXController.PlayClip(SFXClipName.JUMP);
         }
         m_Walking = m_Grounded && Math.Abs(move) > 0.05f;
     }

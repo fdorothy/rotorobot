@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     private Rigidbody2D m_RigidBody;
     protected Animator m_Animator;
     private bool m_Jump = false;
+    public bool paused = false;
 
     public Bullet beamPrefab;
     public Bullet beamObject;
@@ -49,7 +50,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (creature.hitpoints == 0) {
+        if (creature.hitpoints == 0 || paused) {
             return;
         }
         float h = CrossPlatformInputManager.GetAxis("Horizontal");
@@ -121,10 +122,14 @@ public class Player : MonoBehaviour
         }
         m_RigidBody.AddForce(Vector2.up * Physics2D.gravity.y * (multiplier - 1.0f));
 
+        if (paused) {
+            h = 0.0f;
+            m_Jump = false;
+        }
         // Pass all parameters to the character control script.
         m_Character.Move(h, false, m_Jump);
         m_Jump = false;
-
+        if (paused) return;
         bool fire1 = CrossPlatformInputManager.GetButtonDown("Fire1");
         if (fire1 || (requestShot && !shooting))
         {
@@ -199,6 +204,7 @@ public class Player : MonoBehaviour
         shooting = true;
         m_Animator.SetBool("Shooting", true);
         beamObject.Shoot(new Vector2(m_Character.m_FacingRight ? 1.0f : -1.0f, 0.0f));
+        SFXController.PlayClip(SFXClipName.SHOOT);
         beamObject = null;
         Invoke("ResetGun", 0.25f);
     }
@@ -210,14 +216,17 @@ public class Player : MonoBehaviour
     }
 
     public void OnHit() {
-
+        SFXController.PlayClip(SFXClipName.PLAYERHIT);
     }
 
-    public void OnDying() {
+    public void OnDying()
+    {
+        SFXController.PlayClip(SFXClipName.PLAYERHIT);
     }
 
     public void OnDead() {
         Debug.Log("Changing scene to title");
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Title");
+        string scene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+        UnityEngine.SceneManagement.SceneManager.LoadScene(scene);
     }
 }

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.1" orientation="orthogonal" renderorder="right-down" width="96" height="16" tilewidth="16" tileheight="16" nextobjectid="82">
+ <tileset firstgid="1" source="../graphics/grotto_escape.tsx"/>
+ <tileset firstgid="41" source="monsters.tsx"/>
+ <tileset firstgid="53" source="jail.tsx"/>
+ <tileset firstgid="56" source="pink.tsx"/>
+ <layer name="background" width="96" height="16">
+  <data encoding="base64" compression="zlib">
+   eJzt0LENACAMA8FMQssW7D8WTQoGiOSCO+l7y1UAALNWR8buyPA/r5MeAADA1y52AgEX
+  </data>
+ </layer>
+ <objectgroup name="objects">
+  <object id="72" name="player" type="player" x="16" y="176" width="16" height="16"/>
+  <object id="73" name="slimer" type="slime_spawner" x="128" y="208" width="16" height="16"/>
+  <object id="74" name="beef_boy" type="beefboy_spawner" x="368" y="208" width="16" height="16"/>
+  <object id="75" name="slimer" type="slime_spawner" x="544" y="48" width="16" height="16"/>
+  <object id="76" name="beef_boy" type="beefboy_spawner" x="896" y="112" width="16" height="16"/>
+  <object id="77" name="beef_boy" type="beefboy_spawner" x="1344" y="160" width="16" height="16"/>
+  <object id="78" name="slimer" type="slime_spawner" x="704" y="48" width="16" height="16"/>
+  <object id="79" name="slimer" type="slime_spawner" x="1008" y="48" width="16" height="16"/>
+  <object id="80" name="slimer" type="slime_spawner" x="1184" y="128" width="16" height="16"/>
+  <object id="81" name="GameEnd" type="GameEnd" x="1436" y="128" width="16" height="16"/>
+ </objectgroup>
+ <layer name="lava" width="96" height="16">
+  <data encoding="base64" compression="zlib">
+   eJztzbsKwCAQRFGb3Tap1P//UreIICKKG0hh7oHB52gIAAAAAAAAONlluT/uv/3zJMmSLdHRjY5+2wH+TJ/IYJRmrd1cB+d9ZPHezl2ZvFH3vAqvjgJd
+  </data>
+ </layer>
+ <layer name="ground" width="96" height="16">
+  <data encoding="base64" compression="zlib">
+   eJztVssOwjAMC48zcBqPcSr//4+00iZKSFpnD60qtWQVdVlgrnFGVDe6gQ3boOm/LZr+26Lpr+Pu2Xs+Ij5n1Eng+s/pVRt2ngfP/bAGHmfULfmd/4QrYRmB1pFSF+9ZetWOoMVtwboARH+0V+0IuiBaoHUBuZy39Koda/g/l/NIL8usTmXZ2fMSraVhjfzP3YP0ssxq7T23o89Zj2tpcwfVNdRY/aP53OJF5Pc5z1dEJ+xJ10uAJX+s3tFy3pJlSG2staNvjV1ivwSgs3BKfmraWd+lcrWaxzX/jxznS0+/s4bvpT7zezl5fTzHUC1OZPe/dmZr+D/lcymPpOvS/0jLrlQ/KQd5ffx8iK5T/K/NRav+SP5z3fkzS+fzBuqXHYo=
+  </data>
+ </layer>
+</map>

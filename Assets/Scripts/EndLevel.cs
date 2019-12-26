@@ -6,13 +6,17 @@ using Fungus;
 public class EndLevel : MonoBehaviour
 {
     Flowchart chart;
+    Player player;
 
     public void Start() {
-        chart = GameObject.FindObjectOfType<Flowchart>();
+        player = GameObject.FindWithTag("Player").GetComponent<Player>();
+        chart = GameObject.Find("Flowchart").GetComponent<Flowchart>();
     }
 
     void OnTriggerEnter2D(Collider2D collider2d) {
         if (collider2d.tag == "Player") {
+            player.paused = true;
+
             chart.ExecuteBlock("LevelEnd");
         }
     }

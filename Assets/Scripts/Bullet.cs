@@ -50,7 +50,7 @@ public class Bullet : MonoBehaviour
         this.transform.parent = null;
         this.dir = dir.normalized;
         shooting = true;
-        Invoke("Kill", 3.0f);
+        Invoke("Kill", 0.3f);
         trailSystem.Play();
         if (fader != null)
         {
@@ -93,7 +93,7 @@ public class Bullet : MonoBehaviour
             if (m)
             {
                 Debug.Log("hit with dir = " + dir.ToString());
-                m.Hit(1, 5.0f * dir.normalized);
+                m.Hit(1, 2.0f * dir.normalized);
             }
         }
         else
@@ -108,6 +108,7 @@ public class Bullet : MonoBehaviour
         sprite.sprite = explosionSprite;
         trailSystem.Stop();
         blastSystem.Play();
+        SFXController.PlayClip(SFXClipName.SHOOT);
         this.transform.position = position;
         Invoke("Kill", 0.5f);
     }

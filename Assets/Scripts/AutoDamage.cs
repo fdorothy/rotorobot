@@ -32,7 +32,7 @@ public class AutoDamage : MonoBehaviour
             }
             else
             {
-                c.Hit(damage, (dir.normalized + Vector2.up) * 5.0f);
+                c.Hit(damage, (dir.normalized + Vector2.up) * 2.0f);
             }
         }
 

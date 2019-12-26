@@ -209,120 +209,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &807926720
-GameObject:
+--- !u!115 &739660257
+MonoScript:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 807926722}
-  - component: {fileID: 807926721}
-  - component: {fileID: 807926723}
-  - component: {fileID: 807926724}
-  m_Layer: 0
-  m_Name: rotoship
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &807926721
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 807926720}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 3
-  m_Sprite: {fileID: 7867968448688051535, guid: de3901f9a242446799f5cac52847b13f,
-    type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.32, y: 0.32}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &807926722
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 807926720}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.01, y: -1.79, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 6}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &807926723
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 807926720}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c48ed2a2b134740d8bb5783e72705394, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &807926724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 807926720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae89ab196e78b4706a7badc8287c4003, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  serializedVersion: 5
+  m_Script: 
+  m_DefaultReferences: {}
+  m_Icon: {fileID: 0}
+  m_ExecutionOrder: 0
+  m_ClassName: PlayUsfxrSound
+  m_Namespace: Fungus
+--- !u!1 &807926720 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4654018676430489673, guid: 2b12e972f780b497e83cccfc8eb92a29,
+    type: 3}
+  m_PrefabInstance: {fileID: 4654018677233660809}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &954351687 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9200431395625698945, guid: 8ee65ef4f4e5640b2a6b4fe3205120cf,
@@ -428,7 +334,6 @@ GameObject:
   - component: {fileID: 1385149718}
   - component: {fileID: 1385149720}
   - component: {fileID: 1385149722}
-  - component: {fileID: 1385149719}
   - component: {fileID: 1385149724}
   - component: {fileID: 1385149723}
   - component: {fileID: 1385149727}
@@ -446,12 +351,21 @@ GameObject:
   - component: {fileID: 1385149737}
   - component: {fileID: 1385149738}
   - component: {fileID: 1385149739}
-  - component: {fileID: 1385149740}
   - component: {fileID: 1385149741}
   - component: {fileID: 1385149743}
   - component: {fileID: 1385149742}
   - component: {fileID: 1385149744}
   - component: {fileID: 1385149745}
+  - component: {fileID: 1385149746}
+  - component: {fileID: 1385149719}
+  - component: {fileID: 1385149740}
+  - component: {fileID: 1385149747}
+  - component: {fileID: 1385149748}
+  - component: {fileID: 1385149749}
+  - component: {fileID: 1385149750}
+  - component: {fileID: 1385149751}
+  - component: {fileID: 1385149754}
+  - component: {fileID: 1385149755}
   m_Layer: 0
   m_Name: IntroFlowchart
   m_TagString: Untagged
@@ -472,10 +386,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -124, y: 100}
+  scrollPos: {x: -173, y: 58}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 280
+  blockViewHeight: 349
   zoom: 1
   scrollViewRect:
     serializedVersion: 2
@@ -486,7 +400,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1385149723}
   selectedCommands:
-  - {fileID: 1385149732}
+  - {fileID: 1385149751}
   variables: []
   description: 
   stepPause: 0
@@ -523,28 +437,27 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 1385149720}
   commandList:
+  - {fileID: 1385149746}
   - {fileID: 1385149722}
-  - {fileID: 1385149719}
   - {fileID: 1385149724}
   - {fileID: 1385149727}
 --- !u!114 &1385149719
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1385149716}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Script: {fileID: 11500000, guid: a4015e84616cc45cfb498561373899d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 3
+  itemId: 28
   indentLevel: 0
-  _duration:
-    floatRef: {fileID: 0}
-    floatVal: 3
-  durationOLD: 0
+  volume: 0.25
+  fadeDuration: 1
+  waitUntilFinished: 1
 --- !u!114 &1385149720
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -613,24 +526,32 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 1385149719}
   - {fileID: 1385149726}
+  - {fileID: 1385149751}
+  - {fileID: 1385149754}
   - {fileID: 1385149725}
   - {fileID: 1385149728}
   - {fileID: 1385149729}
   - {fileID: 1385149730}
   - {fileID: 1385149741}
   - {fileID: 1385149744}
+  - {fileID: 1385149740}
   - {fileID: 1385149736}
   - {fileID: 1385149737}
   - {fileID: 1385149733}
   - {fileID: 1385149735}
+  - {fileID: 1385149732}
+  - {fileID: 1385149734}
+  - {fileID: 1385149747}
   - {fileID: 1385149738}
   - {fileID: 1385149739}
-  - {fileID: 1385149734}
-  - {fileID: 1385149740}
-  - {fileID: 1385149732}
   - {fileID: 1385149745}
+  - {fileID: 1385149755}
   - {fileID: 1385149731}
+  - {fileID: 1385149748}
+  - {fileID: 1385149750}
+  - {fileID: 1385149749}
   - {fileID: 1385149743}
   - {fileID: 1385149742}
 --- !u!114 &1385149724
@@ -647,32 +568,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 4
   indentLevel: 0
-  storyText: 'BEGIN DIRECTIVE
+  storyText: 'RECITING DIRECTIVE 1.1A
 
 
     Humans have begun spreading through the universe.
 
 
-    No intelligent life has been encountered yet, but the mathematicians believe another
-    alien race is spreading from the region space known as the Great Attractor.
+    No intelligent life has been encountered yet, but the Mathematician believes another
+    alien race is spreading from the region of space known as the Great Attractor.
+    The region of space is so dense with galaxies it is impossible to discern what
+    it contains, or why everything in the universe pulls towards it.
 
 
-    105,821 galaxies have been colonized. The statistical proof of alien contact was
-    80,425. We are long overdue for a violent conflict, but our opponents have yet
-    to be seen.
+    105,821 galaxies have been colonized. The statistical likelihood of alien contact
+    with each new colony is now 1 in 10. We are long overdue for a violent conflict,
+    with an opponent we have never met.
 
 
-    The mathematicians are on edge.
+    Colonies are restricted to expand into new systems at certain times, to ensure
+    humans are not spread too thin in case war breaks out. Combat ships with specially
+    designed fighting robots patrol the galaxies, keeping civilian colonists in check.
 
 
-    Colonies are only allowed to expand to new systems at certain times, to ensure
-    safety in case the aliens are encountered. Combat ships with specially designed
-    fighting robots
-
-    patrol the galaxies, and keep civilians colonists in check.
-
-
-    END DIRECTIVE'
+    END DIRECTIVE 1.1A'
   description: 
   character: {fileID: 2145328698}
   portrait: {fileID: 2614870373251885436, guid: 30d40b93414092c45ae8363a6250725b,
@@ -768,7 +686,7 @@ MonoBehaviour:
   storyText: This is Robot ROTO-26, copy that. Colony 280N54, do you request assistance?
   description: 
   character: {fileID: 954351687}
-  portrait: {fileID: 5865078278364869351, guid: f632df21ecfa26151bfdc20dd140815c,
+  portrait: {fileID: 4687105060926057572, guid: 69a8b502b428b4c1d9e94c29f4a479ed,
     type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -828,7 +746,7 @@ MonoBehaviour:
     Initiating warp drive.'
   description: 
   character: {fileID: 954351687}
-  portrait: {fileID: 5865078278364869351, guid: f632df21ecfa26151bfdc20dd140815c,
+  portrait: {fileID: 4687105060926057572, guid: 69a8b502b428b4c1d9e94c29f4a479ed,
     type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -853,17 +771,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 12
   indentLevel: 0
-  storyText: 'Starting scan of planet
-
-
-    ...
-
-
-    There''s a valley outside of the colony. I''d better land there and walk in to
-    town in case there''s trouble.'
+  storyText: Starting scan of planet
   description: 
   character: {fileID: 954351687}
-  portrait: {fileID: 5865078278364869351, guid: f632df21ecfa26151bfdc20dd140815c,
+  portrait: {fileID: 4687105060926057572, guid: 69a8b502b428b4c1d9e94c29f4a479ed,
     type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -962,7 +873,7 @@ MonoBehaviour:
   indentLevel: 0
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 5
+    floatVal: 3
   durationOLD: 0
 --- !u!114 &1385149736
 MonoBehaviour:
@@ -1042,22 +953,24 @@ MonoBehaviour:
   fadeTexture: {fileID: 0}
 --- !u!114 &1385149740
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1385149716}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Script: {fileID: 739660257}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 21
+  itemId: 29
   indentLevel: 0
-  _duration:
-    floatRef: {fileID: 0}
-    floatVal: 1
-  durationOLD: 0
+  ParentTransform: {fileID: 0}
+  _SettingsString:
+    stringRef: {fileID: 0}
+    stringVal: 3,.5,,.846,.741,.3361,.3,.4352,,-.3723,.285,.058,.089,.439,,,,,,,,,,-.0486,-.2664,1,,,,,,
+  waitDuration: 0
+  SettingsStringOLD: 
 --- !u!114 &1385149741
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1148,6 +1061,167 @@ MonoBehaviour:
   targetObject: {fileID: 807926720}
   methodName: Idle
   delay: 0
+--- !u!114 &1385149746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385149716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 27
+  indentLevel: 0
+  duration: 1
+  targetAlpha: 0
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+--- !u!114 &1385149747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385149716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 739660257}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 30
+  indentLevel: 0
+  ParentTransform: {fileID: 0}
+  _SettingsString:
+    stringRef: {fileID: 0}
+    stringVal: 3,.5,,.2604,.5772,.102,.3,.1213,,-.2397,,,,,,,,,,,,,,,,1,,,,,,
+  waitDuration: 0
+  SettingsStringOLD: 
+--- !u!114 &1385149748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385149716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 739660257}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 31
+  indentLevel: 0
+  ParentTransform: {fileID: 0}
+  _SettingsString:
+    stringRef: {fileID: 0}
+    stringVal: 0,.5,,.677,,.4391,.3,.4988,,.307,,,,,,,,,,,.2561,,.563,,,1,,,,,,
+  waitDuration: 0
+  SettingsStringOLD: 
+--- !u!114 &1385149749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385149716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 32
+  indentLevel: 0
+  storyText: There's a valley next to the colony. I'd better walk into town from there.
+  description: 
+  character: {fileID: 954351687}
+  portrait: {fileID: 4687105060926057572, guid: 69a8b502b428b4c1d9e94c29f4a479ed,
+    type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1385149750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385149716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 33
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 2
+  durationOLD: 0
+--- !u!114 &1385149751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385149716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 739660257}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 34
+  indentLevel: 0
+  ParentTransform: {fileID: 0}
+  _SettingsString:
+    stringRef: {fileID: 0}
+    stringVal: 1,.5,,.329,,.4557,.3,.4688,,.342,,,,,,,,,,,,,.4894,,,1,,,,,,
+  waitDuration: 0
+  SettingsStringOLD: 
+--- !u!114 &1385149754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385149716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 36
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  durationOLD: 0
+--- !u!114 &1385149755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385149716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 38
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  durationOLD: 0
 --- !u!114 &1463535484 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7544879538575113280, guid: a6b8a515728624c9baab4a762a9eaa45,
@@ -1372,6 +1446,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8743fe769d2614df485b3e8671fcacbc, type: 3}
+--- !u!1001 &4654018677233660809
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4654018676430489673, guid: 2b12e972f780b497e83cccfc8eb92a29,
+        type: 3}
+      propertyPath: m_Name
+      value: rotoship
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654018676430489675, guid: 2b12e972f780b497e83cccfc8eb92a29,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654018676430489675, guid: 2b12e972f780b497e83cccfc8eb92a29,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654018676430489675, guid: 2b12e972f780b497e83cccfc8eb92a29,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654018676430489675, guid: 2b12e972f780b497e83cccfc8eb92a29,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654018676430489675, guid: 2b12e972f780b497e83cccfc8eb92a29,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654018676430489675, guid: 2b12e972f780b497e83cccfc8eb92a29,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654018676430489675, guid: 2b12e972f780b497e83cccfc8eb92a29,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654018676430489675, guid: 2b12e972f780b497e83cccfc8eb92a29,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654018676430489675, guid: 2b12e972f780b497e83cccfc8eb92a29,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654018676430489675, guid: 2b12e972f780b497e83cccfc8eb92a29,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654018676430489675, guid: 2b12e972f780b497e83cccfc8eb92a29,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2b12e972f780b497e83cccfc8eb92a29, type: 3}
 --- !u!1001 &5539914511674908521
 PrefabInstance:
   m_ObjectHideFlags: 0
