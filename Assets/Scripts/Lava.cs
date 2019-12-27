@@ -10,7 +10,7 @@ public class Lava : MonoBehaviour
 
     float force = 0.0f;
 
-    void OnTriggerStay2D(Collider2D collider2D) {
+    void OnTriggerEnter2D(Collider2D collider2D) {
         if (collider2D.gameObject.tag == enemyTag) {
             SFXController.PlayClip(SFXClipName.SPLASH);
             Creature c = collider2D.gameObject.GetComponent<Creature>();
