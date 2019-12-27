@@ -209,20 +209,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!115 &739660257
-MonoScript:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  serializedVersion: 5
-  m_Script: 
-  m_DefaultReferences: {}
-  m_Icon: {fileID: 0}
-  m_ExecutionOrder: 0
-  m_ClassName: PlayUsfxrSound
-  m_Namespace: Fungus
 --- !u!1 &807926720 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4654018676430489673, guid: 2b12e972f780b497e83cccfc8eb92a29,
@@ -358,14 +344,14 @@ GameObject:
   - component: {fileID: 1385149745}
   - component: {fileID: 1385149746}
   - component: {fileID: 1385149719}
-  - component: {fileID: 1385149740}
-  - component: {fileID: 1385149747}
-  - component: {fileID: 1385149748}
   - component: {fileID: 1385149749}
   - component: {fileID: 1385149750}
-  - component: {fileID: 1385149751}
   - component: {fileID: 1385149754}
   - component: {fileID: 1385149755}
+  - component: {fileID: 1385149751}
+  - component: {fileID: 1385149748}
+  - component: {fileID: 1385149747}
+  - component: {fileID: 1385149740}
   m_Layer: 0
   m_Name: IntroFlowchart
   m_TagString: Untagged
@@ -386,7 +372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -173, y: 58}
+  scrollPos: {x: -246, y: 100}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 349
@@ -400,7 +386,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1385149723}
   selectedCommands:
-  - {fileID: 1385149751}
+  - {fileID: 1385149740}
   variables: []
   description: 
   stepPause: 0
@@ -536,7 +522,7 @@ MonoBehaviour:
   - {fileID: 1385149730}
   - {fileID: 1385149741}
   - {fileID: 1385149744}
-  - {fileID: 1385149740}
+  - {fileID: 1385149748}
   - {fileID: 1385149736}
   - {fileID: 1385149737}
   - {fileID: 1385149733}
@@ -549,7 +535,7 @@ MonoBehaviour:
   - {fileID: 1385149745}
   - {fileID: 1385149755}
   - {fileID: 1385149731}
-  - {fileID: 1385149748}
+  - {fileID: 1385149740}
   - {fileID: 1385149750}
   - {fileID: 1385149749}
   - {fileID: 1385149743}
@@ -960,17 +946,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1385149716}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 739660257}
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 29
+  itemId: 42
   indentLevel: 0
-  ParentTransform: {fileID: 0}
-  _SettingsString:
-    stringRef: {fileID: 0}
-    stringVal: 3,.5,,.846,.741,.3361,.3,.4352,,-.3723,.285,.058,.089,.439,,,,,,,,,,-.0486,-.2664,1,,,,,,
-  waitDuration: 0
-  SettingsStringOLD: 
+  soundClip: {fileID: 8300000, guid: 6ce354c3e10924b9c996f36448dc0be1, type: 3}
+  volume: 1
+  waitUntilFinished: 0
 --- !u!114 &1385149741
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1089,17 +1072,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1385149716}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 739660257}
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 30
+  itemId: 41
   indentLevel: 0
-  ParentTransform: {fileID: 0}
-  _SettingsString:
-    stringRef: {fileID: 0}
-    stringVal: 3,.5,,.2604,.5772,.102,.3,.1213,,-.2397,,,,,,,,,,,,,,,,1,,,,,,
-  waitDuration: 0
-  SettingsStringOLD: 
+  soundClip: {fileID: 8300000, guid: 7fc61d7f615754159911b0efdf9d0280, type: 3}
+  volume: 1
+  waitUntilFinished: 0
 --- !u!114 &1385149748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1109,17 +1089,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1385149716}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 739660257}
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 31
+  itemId: 40
   indentLevel: 0
-  ParentTransform: {fileID: 0}
-  _SettingsString:
-    stringRef: {fileID: 0}
-    stringVal: 0,.5,,.677,,.4391,.3,.4988,,.307,,,,,,,,,,,.2561,,.563,,,1,,,,,,
-  waitDuration: 0
-  SettingsStringOLD: 
+  soundClip: {fileID: 8300000, guid: 9d87976988998470da06fe8362bd2b81, type: 3}
+  volume: 1
+  waitUntilFinished: 0
 --- !u!114 &1385149749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1175,17 +1152,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1385149716}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 739660257}
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 34
+  itemId: 39
   indentLevel: 0
-  ParentTransform: {fileID: 0}
-  _SettingsString:
-    stringRef: {fileID: 0}
-    stringVal: 1,.5,,.329,,.4557,.3,.4688,,.342,,,,,,,,,,,,,.4894,,,1,,,,,,
-  waitDuration: 0
-  SettingsStringOLD: 
+  soundClip: {fileID: 8300000, guid: 0162d6fc4b3324dbeaade4cbf99049b8, type: 3}
+  volume: 1
+  waitUntilFinished: 0
 --- !u!114 &1385149754
 MonoBehaviour:
   m_ObjectHideFlags: 0

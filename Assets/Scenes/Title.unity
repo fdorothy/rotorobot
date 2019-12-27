@@ -6113,6 +6113,7 @@ GameObject:
   - component: {fileID: 1680783017}
   - component: {fileID: 1680783020}
   - component: {fileID: 1680783019}
+  - component: {fileID: 1680783021}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -6196,7 +6197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 57.083042, y: 74.58449}
+  scrollPos: {x: 30.055687, y: 35.973984}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 280
@@ -6208,9 +6209,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1680782975}
+  - {fileID: 1680782984}
   selectedCommands:
-  - {fileID: 1680783020}
+  - {fileID: 1680783021}
   variables:
   - {fileID: 1680782992}
   description: 
@@ -6406,6 +6407,7 @@ MonoBehaviour:
   - {fileID: 1680782985}
   - {fileID: 1680782986}
   - {fileID: 1680782987}
+  - {fileID: 1680783021}
   - {fileID: 1680782988}
 --- !u!114 &1680782985
 MonoBehaviour:
@@ -7559,6 +7561,39 @@ MonoBehaviour:
   atTime: 0
   loop: 1
   fadeDuration: 1
+--- !u!114 &1680783021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680782972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 48
+  indentLevel: 0
+  storyText: 'Theme music "Lines of Code" by Trevor Lentz
+
+
+    Gameplay music "Raining Bits" by Gundatsch
+
+
+    opengameart.org'
+  description: 
+  character: {fileID: 1869043419}
+  portrait: {fileID: 21300000, guid: f1289455153564694a6f8349cb2ef67a, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &1825797212
 GameObject:
   m_ObjectHideFlags: 0

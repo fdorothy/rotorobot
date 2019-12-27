@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fungus;
 using UnityStandardAssets.CrossPlatformInput;
 
 [RequireComponent(typeof(PlatformerCharacter2D))]
@@ -225,8 +226,7 @@ public class Player : MonoBehaviour
     }
 
     public void OnDead() {
-        Debug.Log("Changing scene to title");
-        string scene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
-        UnityEngine.SceneManagement.SceneManager.LoadScene(scene);
+        Flowchart chart = GameObject.Find("Flowchart").GetComponent<Flowchart>();
+        chart.ExecuteBlock("GameOver");
     }
 }

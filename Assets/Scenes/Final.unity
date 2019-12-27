@@ -387,6 +387,7 @@ GameObject:
   - component: {fileID: 1385149722}
   - component: {fileID: 1385149724}
   - component: {fileID: 1385149727}
+  - component: {fileID: 1385149728}
   m_Layer: 0
   m_Name: IntroFlowchart
   m_TagString: Untagged
@@ -421,7 +422,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1385149723}
   selectedCommands:
-  - {fileID: 1385149727}
+  - {fileID: 1385149728}
   variables: []
   description: 
   stepPause: 0
@@ -544,6 +545,7 @@ MonoBehaviour:
   - {fileID: 1385149724}
   - {fileID: 1385149719}
   - {fileID: 1385149726}
+  - {fileID: 1385149728}
   - {fileID: 1385149736}
   - {fileID: 1385149737}
   - {fileID: 1385149720}
@@ -583,7 +585,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 8
   indentLevel: 0
-  storyText: '...and so the alien mimic was taken to the Mathematician, for interrogation.
+  storyText: '...and so the alien mimic was taken to the Mathematician for interrogation.
 
 
     What secrets will he uncover about this new alien race? What new adventure awaits
@@ -632,6 +634,23 @@ MonoBehaviour:
   indentLevel: 0
   volume: 0
   fadeDuration: 1
+  waitUntilFinished: 0
+--- !u!114 &1385149728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385149716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 33
+  indentLevel: 0
+  soundClip: {fileID: 8300000, guid: 9d87976988998470da06fe8362bd2b81, type: 3}
+  volume: 1
   waitUntilFinished: 0
 --- !u!114 &1385149733
 MonoBehaviour:
